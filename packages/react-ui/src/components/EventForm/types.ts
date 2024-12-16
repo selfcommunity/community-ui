@@ -1,4 +1,4 @@
-import { SCEventLocationType, SCEventRecurrenceType } from '@selfcommunity/types';
+import {SCEventLocationType, SCEventRecurrenceType, SCLiveStreamType, SCLiveStreamSettingsType} from '@selfcommunity/types';
 
 export type Place = {
   description: string;
@@ -11,6 +11,7 @@ export type Geolocation = {
   lat?: number;
   lng?: number;
   link?: string;
+  liveStreamSettings?: SCLiveStreamSettingsType;
 };
 
 export type InitialFieldState = Geolocation & {

@@ -87,7 +87,8 @@ import {
   type SCNotificationUserFollowType,
   type SCNotificationVoteUpType,
   type SCNotificationGroupActivityType,
-  SCNotificationEventActivityType
+  SCNotificationEventActivityType,
+  SCNotificationLiveStreamActivityType
 } from './notification';
 import {type SCWebhookEndpointAttemptType, type SCWebhookEndpointSecretType, type SCWebhookEndpointType, type SCWebhookEventsType} from './webhook';
 import {type SCVoteType} from './vote';
@@ -132,7 +133,18 @@ import {
   SCEventLocationFilterType,
   SCEventSubscriptionStatusType
 } from './event';
+import {
+  type SCLiveStreamType,
+  SCLiveStreamViewType,
+  SCLiveStreamConnectionDetailsType,
+  SCLiveStreamSettingsType,
+  SCLiveStreamMonthlyDurationType,
+  SCLiveStreamConnectionDetailsResponseErrorType,
+  SCLiveStreamConnectionDetailsErrorType
+} from './liveStream';
 import {type SCStepType, SCOnBoardingStepType, SCOnBoardingStepStatusType, SCOnBoardingStepIdType} from './onboarding';
+import {SCCommunitySubscriptionTier} from './tier';
+
 /**
  * Exports all types
  */
@@ -236,6 +248,7 @@ export {
   type SCNotificationContributionType,
   type SCNotificationGroupActivityType,
   type SCNotificationEventActivityType,
+  type SCNotificationLiveStreamActivityType,
   type SCPrizeType,
   type SCPrizeUserType,
   SCPrizeUserStatusType,
@@ -296,5 +309,13 @@ export {
   type SCStepType,
   SCOnBoardingStepType,
   SCOnBoardingStepStatusType,
-  SCOnBoardingStepIdType
+  type SCLiveStreamType,
+  type SCLiveStreamConnectionDetailsType,
+  type SCLiveStreamSettingsType,
+  type SCLiveStreamConnectionDetailsResponseErrorType,
+  type SCLiveStreamMonthlyDurationType,
+  SCLiveStreamConnectionDetailsErrorType,
+  SCLiveStreamViewType,
+  SCOnBoardingStepIdType,
+  SCCommunitySubscriptionTier
 };

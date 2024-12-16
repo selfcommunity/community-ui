@@ -43,6 +43,7 @@ import NotificationItem from '../../shared/NotificationItem';
 import {PREFIX} from './constants';
 import GroupNotification from '../Notification/Group';
 import EventNotification from '../Notification/Event/Event';
+import LiveStreamNotification from '../Notification/LiveStream';
 
 const classes = {
   root: `${PREFIX}-root`,
@@ -365,6 +366,8 @@ export default function SnippetNotifications(inProps: SnippetNotificationsProps)
       n.type === SCNotificationTypologyType.USER_REQUESTED_TO_JOIN_EVENT
     ) {
       return <EventNotification notificationObject={n} key={i} template={SCNotificationObjectTemplateType.SNIPPET} />;
+    } else if (type === SCNotificationTypologyType.LIVE_STREAM_STARTED) {
+      content = <LiveStreamNotification notificationObject={n} key={i} template={SCNotificationObjectTemplateType.SNIPPET} />;
     }
     if (type && handleNotification) {
       /** Override content */

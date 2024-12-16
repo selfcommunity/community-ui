@@ -23,6 +23,7 @@ export const SCNotificationMapping = {
   16: SCNotificationTypologyType.FOLLOW,
   37: SCNotificationTypologyType.PRIVATE_MESSAGE,
   105: SCNotificationTypologyType.DELETE_PRIVATE_MESSAGE,
+  26: SCNotificationTypologyType.LIVE_STREAM_STARTED,
   50: SCNotificationTypologyType.DELETED_FOR_ADVERTISING,
   51: SCNotificationTypologyType.DELETED_FOR_AGGRESSIVE,
   52: SCNotificationTypologyType.DELETED_FOR_VULGAR,
@@ -49,7 +50,7 @@ export const SCNotificationMapping = {
   31: SCNotificationTypologyType.USER_INVITED_TO_JOIN_GROUP,
   32: SCNotificationTypologyType.USER_REQUESTED_TO_JOIN_GROUP,
   33: SCNotificationTypologyType.USER_ACCEPTED_TO_JOIN_GROUP,
-  34: SCNotificationTypologyType.USER_ADDED_TO_GROUP
+  34: SCNotificationTypologyType.USER_ADDED_TO_GROUP,
 };
 
 /**

@@ -25,6 +25,6 @@ export default {
 
 const template = (args) => <ContributionActionsMenu {...args} />;
 
-export const Base: StoryObj<ContributionActionsMenu> = {
+export const Base: StoryObj<typeof ContributionActionsMenu> = {
   render: template
 };

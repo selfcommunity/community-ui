@@ -1,7 +1,7 @@
-import {Box, Icon, Stack, styled, Tooltip, Typography, useThemeProps} from '@mui/material';
-import {Link, useSCFetchEvent} from '@selfcommunity/react-core';
+import {Box, Button, Icon, Stack, styled, Tooltip, Typography, useThemeProps} from '@mui/material';
+import {Link, SCRoutes, SCRoutingContextType, SCUserContext, SCUserContextType, useSCFetchEvent, useSCRouting} from '@selfcommunity/react-core';
 import {SCEventLocationType, SCEventPrivacyType, SCEventRecurrenceType, SCEventType} from '@selfcommunity/types';
-import {ReactNode, useMemo} from 'react';
+import React, {ReactNode, useContext, useMemo} from 'react';
 import {FormattedMessage, useIntl} from 'react-intl';
 
 const PREFIX = 'SCEventInfoDetails';
@@ -11,6 +11,7 @@ const classes = {
   iconTextWrapper: `${PREFIX}-icon-text-wrapper`,
   inProgress: `${PREFIX}-in-progress`,
   link: `${PREFIX}-link`,
+  joinLive: `${PREFIX}-join-live`,
   url: `${PREFIX}-url`,
   creationWrapper: `${PREFIX}-creation-wrapper`
 };
@@ -74,6 +75,10 @@ export default function EventInfoDetails(inProps: EventInfoDetailsProps) {
   const intl = useIntl();
   const {scEvent} = useSCFetchEvent({id: eventId, event, autoSubscribe: false});
 
+  // CONTEXT
+  const scRoutingContext: SCRoutingContextType = useSCRouting();
+  const scUserContext: SCUserContextType = useContext(SCUserContext);
+
   const privacy = useMemo(
     () => (scEvent && scEvent.privacy === SCEventPrivacyType.PUBLIC ? 'ui.eventInfoDetails.privacy.public' : 'ui.eventInfoDetails.privacy.private'),
     [scEvent]
@@ -82,6 +87,16 @@ export default function EventInfoDetails(inProps: EventInfoDetailsProps) {
     () =>
       scEvent && scEvent.location === SCEventLocationType.ONLINE ? 'ui.eventInfoDetails.location.virtual' : 'ui.eventInfoDetails.location.inPerson',
     [scEvent]
+  );
+  const disableJoinEvent = useMemo(
+    () =>
+      Boolean(
+        !scEvent ||
+          !scUserContext.user ||
+          (scEvent.live_stream.host.id !== scUserContext.user.id &&
+            (scEvent.live_stream.closed_at_by_host || (scEvent.live_stream.last_started_at && scEvent.live_stream.last_finished_at)))
+      ),
+    [scUserContext.user, scEvent]
   );
 
   if (!scEvent) {
@@ -161,11 +176,24 @@ export default function EventInfoDetails(inProps: EventInfoDetailsProps) {
             <Icon fontSize="small">{scEvent.location === SCEventLocationType.ONLINE ? 'play_circle_outline' : 'add_location_alt'}</Icon>
           )}
           {scEvent.location === SCEventLocationType.ONLINE ? (
-            <Link to={scEvent.link} target="_blank" className={classes.link}>
-              <Typography variant="body1" className={classes.url}>
-                {scEvent.link}
-              </Typography>
-            </Link>
+            scEvent.live_stream ? (
+              <Button
+                size="small"
+                variant="contained"
+                color="secondary"
+                component={Link}
+                disabled={disableJoinEvent}
+                to={scRoutingContext.url(SCRoutes.LIVESTREAM_ROUTE_NAME, scEvent.live_stream)}
+                className={classes.joinLive}>
+                <FormattedMessage defaultMessage="ui.eventInfoDetails.live.join" id="ui.eventInfoDetails.live.join" />
+              </Button>
+            ) : (
+              <Link to={scEvent.link} target="_blank" className={classes.link}>
+                <Typography variant="body1" className={classes.url}>
+                  {scEvent.link}
+                </Typography>
+              </Link>
+            )
           ) : (
             <Typography variant="body1" className={classes.url}>
               {scEvent.geolocation}

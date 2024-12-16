@@ -1,6 +1,6 @@
 const Component = {
   styleOverrides: {
-    root: ({ theme }) => ({
+    root: ({theme}) => ({
       gap: theme.spacing(0.5),
       '& .SCEventInfoDetails-icon-text-wrapper': {
         flexDirection: 'row',
@@ -26,6 +26,9 @@ const Component = {
             '-webkit-line-clamp': '1',
             '-webkit-box-orient': 'vertical'
           }
+        },
+        '& .SCEventInfoDetails-join-live': {
+          height: 20
         },
 
         '& .SCEventInfoDetails-in-progress': {
