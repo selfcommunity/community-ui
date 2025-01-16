@@ -29,6 +29,6 @@ const template = (args) => (
   </div>
 );
 
-export const Base: StoryObj<UserSubscribedGroupsWidgetSkeleton> = {
+export const Base: StoryObj<typeof UserSubscribedGroupsWidgetSkeleton> = {
   render: template
 };

@@ -4,6 +4,7 @@ import {
   SCAvatarType,
   SCCategoryType,
   SCFeedUnitType,
+  SCLiveStreamType,
   SCPlatformType,
   SCTagType,
   SCUserAutocompleteType,
@@ -96,6 +97,7 @@ export interface UserApiClientInterface {
   getProviderAssociations(userId: string | number, config?: AxiosRequestConfig): Promise<SCUserProviderAssociationType[]>;
   createProviderAssociation(data: SCUserProviderAssociationType, config?: AxiosRequestConfig): Promise<SCUserProviderAssociationType>;
   deleteProviderAssociation(data: DeleteProviderAssociation, config?: AxiosRequestConfig): Promise<any>;
+  getUserLiveStream(id: number | string, params?: BaseGetParams, config?: AxiosRequestConfig): Promise<SCPaginatedResponse<SCLiveStreamType>>;
 }
 
 /**
@@ -643,6 +645,16 @@ export class UserApiClient {
       method: Endpoints.DeleteProviderAssociation.method
     });
   }
+
+  /**
+   * This endpoint retrieves the list of live stream currently started by user identified by ID.
+   * @param id
+   * @param params
+   * @param config
+   */
+  static getUserLiveStream(id: number | string, params?: BaseGetParams, config?: AxiosRequestConfig): Promise<SCPaginatedResponse<SCLiveStreamType>> {
+    return apiRequest({...config, url: Endpoints.GetLiveStream.url({id}), method: Endpoints.UserFeed.method, params});
+  }
 }
 
 /**
@@ -851,5 +863,12 @@ export default class UserService {
   }
   static async deleteProviderAssociation(data: DeleteProviderAssociation, config?: AxiosRequestConfig): Promise<any> {
     return UserApiClient.deleteProviderAssociation(data, config);
+  }
+  static async getUserLiveStream(
+    id: number | string,
+    params?: BaseGetParams,
+    config?: AxiosRequestConfig
+  ): Promise<SCPaginatedResponse<SCLiveStreamType>> {
+    return UserApiClient.getUserLiveStream(id, params, config);
   }
 }

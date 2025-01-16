@@ -1,25 +1,30 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-	"emitDeclarationOnly": false,
-	"importHelpers": true,
-    "target": "es6",
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,        /* Enables intero between CommonJS and ES */
-    "jsx": "react",
-    "declaration": true,            /* Concatenate & emit output to single file.*/
-    "sourceMap": false,
-    "declarationMap": false,
-    "outDir": "lib/cjs",                /* Redirect output to the directory. */
-    "skipLibCheck": true,           /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently */
-	"strict": true,
-	"allowSyntheticDefaultImports": true,
-	"isolatedModules": true
-  },
-  "include": [
-    "src/**/*"
-  ]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"emitDeclarationOnly": false,
+		"importHelpers": true,
+		"target": "es6",
+		"module": "commonjs",
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		/* Enables intero between CommonJS and ES */
+		"jsx": "react",
+		"declaration": true,
+		/* Concatenate & emit output to single file.*/
+		"sourceMap": false,
+		"declarationMap": false,
+		"outDir": "lib/cjs",
+		/* Redirect output to the directory. */
+		"skipLibCheck": true,
+		/* Skip type checking of declaration files. */
+		"forceConsistentCasingInFileNames": true,
+		/* Disallow inconsistently */
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true
+	},
+	"include": [
+		"src/**/*"
+	]
 }

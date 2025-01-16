@@ -3,6 +3,7 @@
  * Event Schema.
  */
 import {SCUserType} from './user';
+import {SCLiveStreamType} from './liveStream';
 
 /**
  * SCEventPrivacyType enum
@@ -28,7 +29,8 @@ export enum SCEventSubscriptionStatusType {
  */
 export enum SCEventLocationType {
   PERSON = 'in person',
-  ONLINE = 'virtual'
+  ONLINE = 'virtual',
+  LIVESTREAM = 'live_stream'
 }
 
 /**
@@ -36,8 +38,8 @@ export enum SCEventLocationType {
  */
 export enum SCEventLocationFilterType {
   ANY = 'any',
-	PERSON = 'in person',
-	ONLINE = 'virtual'
+  PERSON = 'in person',
+  ONLINE = 'virtual'
 }
 
 /**
@@ -188,6 +190,11 @@ export interface SCEventType {
    * The event location (in person, online)
    */
   location: SCEventLocationType;
+
+  /**
+   * The event live stream if exist
+   */
+  live_stream?: SCLiveStreamType;
 
   /**
    * The event place

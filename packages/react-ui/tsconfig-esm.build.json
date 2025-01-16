@@ -1,23 +1,28 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-	"emitDeclarationOnly": false,
-	"importHelpers": true,
-    "target": "es6",
-    "module": "esnext",
-    "resolveJsonModule": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,        /* Enables interoperability between CommonJS and ES */
-	"jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,            /* Concatenate & emit output to single file.*/
-    "sourceMap": false,
-    "declarationMap": false,
-    "outDir": "lib/esm",                /* Redirect output to the directory. */
-    "skipLibCheck": true,           /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true /* Disallow inconsistently */
-  },
-  "include": [
-    "src/**/*"
-  ]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"emitDeclarationOnly": false,
+		"importHelpers": true,
+		"target": "es6",
+		"module": "esnext",
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		/* Enables interoperability between CommonJS and ES */
+		"jsx": "react-jsx",
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		/* Concatenate & emit output to single file.*/
+		"sourceMap": false,
+		"declarationMap": false,
+		"outDir": "lib/esm",
+		/* Redirect output to the directory. */
+		"skipLibCheck": true,
+		/* Skip type checking of declaration files. */
+		"forceConsistentCasingInFileNames": true
+		/* Disallow inconsistently */
+	},
+	"include": [
+		"src/**/*"
+	]
 }

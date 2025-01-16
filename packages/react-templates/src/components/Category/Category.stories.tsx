@@ -8,7 +8,7 @@ export default {
 
 export const Base: StoryObj<typeof CategoryTemplate> = {
   args: {
-    categoryId: 9,
+    categoryId: 2,
 
   },
   render: (args) => (
@@ -19,7 +19,7 @@ export const Base: StoryObj<typeof CategoryTemplate> = {
 
 export const BaseContainerFixed: StoryObj<typeof CategoryTemplate> = {
 	args: {
-		categoryId: 1
+		categoryId: 2
 	},
 	render: (args) => {
 		return <div style={{position: 'fixed', bottom: 0, left: 0, right: 0, top: 70, zIndex: 1, maxWidth: '100% !important', height: '92vh', overflow: 'auto'}} id="scrollableDiv">

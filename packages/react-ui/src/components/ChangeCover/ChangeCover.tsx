@@ -249,17 +249,19 @@ export default function ChangeCover(inProps: ChangeCoverProps): JSX.Element {
       <Button size="small" variant="contained" disabled={loading} onClick={handleOpen} {...rest}>
         <Icon>photo_camera</Icon>
       </Button>
-      <>
-        {isMobile ? (
-          <SwipeableDrawer open={open} onClose={handleClose} onOpen={handleOpen} anchor="bottom" disableSwipeToOpen>
-            {renderMenuItems()}
-          </SwipeableDrawer>
-        ) : (
-          <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-            {renderMenuItems()}
-          </Menu>
-        )}
-      </>
+      {open && (
+        <>
+          {isMobile ? (
+            <SwipeableDrawer open onClose={handleClose} onOpen={handleOpen} anchor="bottom" disableSwipeToOpen>
+              {renderMenuItems()}
+            </SwipeableDrawer>
+          ) : (
+            <Menu anchorEl={anchorEl} open onClose={handleClose}>
+              {renderMenuItems()}
+            </Menu>
+          )}
+        </>
+      )}
       {!isMobile && (
         <>
           <Button className={classes.helpPopover} variant="contained" onClick={handleClickHelpButton}>

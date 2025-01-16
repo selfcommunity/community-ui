@@ -1,11 +1,8 @@
 import React, {ReactElement, useMemo} from 'react';
 import {styled} from '@mui/material/styles';
-import LazyLoad from 'react-lazyload';
 import {MEDIA_TYPE_VIDEO} from '../../../constants/Media';
 import AutoPlayer from '../../AutoPlayer';
 import Box from '@mui/material/Box';
-import {DEFAULT_PRELOAD_OFFSET_VIEWPORT} from '../../../constants/LazyLoad';
-import Skeleton from '@mui/material/Skeleton';
 import classNames from 'classnames';
 import {PREFIX} from './constants';
 import {BoxProps, CircularProgress} from '@mui/material';
@@ -69,7 +66,7 @@ export default (props: DisplayComponentProps): ReactElement => {
    */
   const renderPreview = (media: SCMediaType, key: number) => {
     // if (media.embed.metadata.html) {
-		// 	return renderHtml(media, key);
+    // 	return renderHtml(media, key);
     // }
     const domain = new URL(media.embed.metadata.url).hostname.replace('www.', '');
     return (
@@ -127,16 +124,7 @@ export default (props: DisplayComponentProps): ReactElement => {
     <Root className={classNames(className, classes.displayRoot)} {...rest}>
       {_medias.map((l, i) => {
         if (l.embed.metadata && l.embed.metadata.type === MEDIA_TYPE_VIDEO) {
-          return (
-            <LazyLoad
-              className={classes.displayVideo}
-              placeholder={<Skeleton variant="rectangular" height={360} width={'100%'} />}
-              key={i}
-              once
-              offset={DEFAULT_PRELOAD_OFFSET_VIEWPORT}>
-              <AutoPlayer url={l.url} width={'100%'} key={i} onVideoWatch={() => handleLinkClick(l)} />
-            </LazyLoad>
-          );
+          return <AutoPlayer url={l.url} width={'100%'} height={360} key={i} onVideoWatch={() => handleLinkClick(l)} />;
         }
         return <React.Fragment key={i}>{renderPreview(l, i)}</React.Fragment>;
       })}

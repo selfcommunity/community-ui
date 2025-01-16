@@ -104,7 +104,7 @@ export default function EventInfoWidget(inProps: EventInfoWidgetProps) {
     setExpanded(!expanded);
   }, [expanded]);
 
-  const hasGeolocationOrLink = useMemo(() => Boolean(scEvent?.geolocation || scEvent?.link), [scEvent]);
+  const hasGeolocationOrLink = useMemo(() => Boolean(scEvent?.geolocation || scEvent?.link || scEvent?.live_stream), [scEvent]);
 
   const showInfo = useMemo(
     () =>

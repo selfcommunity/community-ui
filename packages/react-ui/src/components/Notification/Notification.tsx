@@ -14,6 +14,8 @@ import KindlyNoticeForNotification from './KindlyNoticeFor';
 import {defineMessages, FormattedMessage, useIntl} from 'react-intl';
 import KindlyNoticeFlagNotification from './KindlyNoticeFlag';
 import VoteUpNotification from './VoteUp';
+import EventNotification from './Event/Event';
+import LiveStreamNotification from './LiveStream/LiveStream';
 import Icon from '@mui/material/Icon';
 import {SCOPE_SC_UI} from '../../constants/Errors';
 import {getContribution, getContributionRouteName, getContributionSnippet, getRouteData} from '../../utils/contribution';
@@ -42,7 +44,7 @@ import UserDeletedSnackBar from '../../shared/UserDeletedSnackBar';
 import UserAvatar from '../../shared/UserAvatar';
 import {PREFIX} from './constants';
 import GroupNotification from './Group';
-import EventNotification from './Event/Event';
+
 
 const messages = defineMessages({
   receivePrivateMessage: {
@@ -486,6 +488,8 @@ export default function UserNotification(inProps: NotificationProps): JSX.Elemen
       n.type === SCNotificationTypologyType.USER_REQUESTED_TO_JOIN_EVENT
     ) {
       return <EventNotification notificationObject={n} key={i} />;
+    } else if (n.type === SCNotificationTypologyType.LIVE_STREAM_STARTED) {
+      return <LiveStreamNotification notificationObject={n} key={i} />;
     }
     return null;
   }

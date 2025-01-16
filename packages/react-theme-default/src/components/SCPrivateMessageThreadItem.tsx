@@ -79,6 +79,7 @@ const Component = {
         }
       },
       '& .SCPrivateMessageThreadItem-document': {
+        position: 'relative',
         [theme.breakpoints.up('sm')]: {
           width: theme.spacing(32.5)
         },
@@ -88,7 +89,7 @@ const Component = {
         },
         '& .MuiButtonBase-root': {
           flexWrap: 'wrap',
-          //width: 'calc(100% - 24px)',
+          width: '100%',
           position: 'absolute',
           bottom: theme.spacing(4),
           backgroundColor: 'rgba(0,0,0,0.5)',

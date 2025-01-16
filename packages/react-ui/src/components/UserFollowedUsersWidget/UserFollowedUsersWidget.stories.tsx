@@ -20,7 +20,7 @@ const template = (args) => (
 );
 
 
-export const Base: StoryObj<UserProfileFollowedUsersWidget> = {
+export const Base: StoryObj<typeof UserProfileFollowedUsersWidget> = {
   args: {
     userId: 1
   },

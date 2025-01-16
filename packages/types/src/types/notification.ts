@@ -1,4 +1,13 @@
-import {SCCommentType, SCEventType, SCFeedDiscussionType, SCFeedPostType, SCFeedStatusType, SCGroupType, SCUserType} from '../index';
+import {
+  SCCommentType,
+  SCEventType,
+  SCFeedDiscussionType,
+  SCFeedPostType,
+  SCFeedStatusType,
+  SCGroupType,
+  SCLiveStreamType,
+  SCUserType
+} from '../index';
 import {SCPrivateMessageThreadType} from './privateMessage';
 import {SCUserBlockedSettingsType} from './user';
 import {SCCustomNotificationType} from './customNotification';
@@ -53,7 +62,8 @@ export enum SCNotificationTypologyType {
   USER_INVITED_TO_JOIN_EVENT = 'user_invited_to_join_event',
   USER_REQUESTED_TO_JOIN_EVENT = 'user_requested_to_join_event',
   USER_ACCEPTED_TO_JOIN_EVENT = 'user_accepted_to_join_event',
-  USER_ADDED_TO_EVENT = 'user_added_to_event'
+  USER_ADDED_TO_EVENT = 'user_added_to_event',
+  LIVE_STREAM_STARTED = 'live_stream_started'
 }
 
 /**
@@ -564,7 +574,17 @@ export interface SCNotificationEventActivityType extends SCNotificationType {
    */
   user: SCUserType;
   /**
-   * The Group obj
+   * The event obj
    */
   event: Partial<SCEventType>;
+}
+
+/**
+ * Interface SCNotificationGroupActivityType.
+ */
+export interface SCNotificationLiveStreamActivityType extends SCNotificationType {
+  /**
+   * The LiveStream obj
+   */
+  live_stream: Partial<SCLiveStreamType>;
 }

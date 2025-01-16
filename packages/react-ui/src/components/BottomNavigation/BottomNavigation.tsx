@@ -101,6 +101,7 @@ export default function BottomNavigation(inProps: BottomNavigationProps) {
       preferences &&
       features &&
       features.includes(SCFeatureName.TAGGING) &&
+      features.includes(SCFeatureName.EVENT) &&
       SCPreferences.CONFIGURATIONS_EVENTS_ENABLED in preferences &&
       preferences[SCPreferences.CONFIGURATIONS_EVENTS_ENABLED].value,
     [preferences, features]

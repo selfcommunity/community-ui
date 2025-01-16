@@ -1,5 +1,5 @@
-import { urlReplacer } from '@selfcommunity/utils';
-import { HttpMethod } from '../client';
+import {urlReplacer} from '@selfcommunity/utils';
+import {HttpMethod} from '../client';
 
 export interface EndpointType {
   url: (params?: any) => string;
@@ -521,6 +521,10 @@ const Endpoints: {[key: string]: EndpointType} = {
   DeleteProviderAssociation: {
     url: urlReplacer('/api/v2/user/$(id)/provider/'),
     method: 'DELETE'
+  },
+  GetLiveStream: {
+    url: urlReplacer('/api/v2/user/$(id)/live_stream/'),
+    method: 'GET'
   },
   /**
    * Broadcast Messages
@@ -1356,6 +1360,49 @@ const Endpoints: {[key: string]: EndpointType} = {
   RemoveMediasFromEventPhotoGallery: {
     url: urlReplacer('/api/v2/event/$(id)/gallery/'),
     method: 'DELETE'
+  },
+  /**
+   * LiveStream
+   */
+  GetLiveStreamInfo: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/'),
+    method: 'GET'
+  },
+  SearchLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/search/'),
+    method: 'GET'
+  },
+  CreateLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/'),
+    method: 'POST'
+  },
+  UpdateLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/'),
+    method: 'PUT'
+  },
+  DeleteLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/'),
+    method: 'DELETE'
+  },
+  PatchLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/'),
+    method: 'PATCH'
+  },
+  CloseLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/close/'),
+    method: 'POST'
+  },
+  JoinLiveStream: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/join/'),
+    method: 'POST'
+  },
+  RemoveParticipant: {
+    url: urlReplacer('/api/v2/live_stream/$(id)/remove_participant/'),
+    method: 'POST'
+  },
+  GetLiveStreamMonthlyDuration: {
+    url: urlReplacer('/api/v2/live_stream/monthly_duration/'),
+    method: 'GET'
   },
   /**
    * OnBoarding

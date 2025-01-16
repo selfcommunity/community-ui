@@ -42,6 +42,7 @@ export const EVENTS_ROUTE_NAME = 'events';
 export const EVENTS_SUGGESTED_ROUTE_NAME = 'events_suggested';
 export const EVENTS_SUBSCRIBED_ROUTE_NAME = 'events_subscribed';
 export const EVENTS_HIGHLIGHT_ROUTE_NAME = 'events_highlight';
+export const LIVESTREAM_ROUTE_NAME = 'live';
 
 /**
  * Default Routes
@@ -86,4 +87,5 @@ export const defaultRoutes: {[k: string]: string} = {
   [EVENT_ROUTE_NAME]: '/event/:id/:slug/',
   [EVENTS_SUBSCRIBED_ROUTE_NAME]: '/events/subscribed/',
   [EVENTS_HIGHLIGHT_ROUTE_NAME]: '/events/highlight/',
+  [LIVESTREAM_ROUTE_NAME]: '/live/:slug/',
 };

@@ -224,7 +224,8 @@ export default function ToolbarPlugin(inProps: ToolbarPluginProps): JSX.Element 
       setFormats(FORMATS.filter((f: TextFormatType) => selection.hasFormat(f)));
       // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
       // @ts-ignore
-      setAlignment(ALIGNMENTS.find((a: ElementFormatType) => element.getFormatType() === a) || ALIGNMENTS[0]);
+      setAlignment(ALIGNMENTS.find((a: ElementFormatType) => element.getFormatType?.() === a) || ALIGNMENTS[0]
+      );
 
       // Update links
       const node = getSelectedNode(selection);

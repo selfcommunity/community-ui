@@ -121,9 +121,6 @@ const Component = {
         color: theme.palette.primary.main,
         marginTop: 0,
         position: 'relative',
-        '& > *': {
-          marginRight: theme.spacing(1)
-        },
         '& .SCCommentObject-activity-at': {
           color: 'inherit',
           textDecoration: 'none',
@@ -138,21 +135,9 @@ const Component = {
           padding: theme.spacing(1),
           textTransform: 'capitalize'
         },
-        '& .SCBullet-root': {
-          display: 'none'
-        },
-        [theme.breakpoints.up('sm')]: {
-          '& > *': {
-            marginRight: 0
-          },
-          '& .SCCommentObject-vote-audience': {
-            position: 'absolute',
-            right: 0,
-            top: 0
-          },
-          '& .SCBullet-root': {
-            display: 'inline'
-          }
+        '& .SCCommentObject-vote-audience': {
+          position: 'absolute',
+          right: 0
         }
       }
     }),

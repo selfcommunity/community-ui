@@ -326,21 +326,25 @@ export default function EventSubscribeButton(inProps: EventSubscribeButtonProps)
             {...rest}>
             {getStatus}
           </SelectRoot>
-          {isMobile ? (
-            <SwipeableDrawerRoot
-              className={classes.drawerRoot}
-              PaperProps={{className: classes.paper}}
-              open={open}
-              onClose={handleClose}
-              onOpen={handleOpen}
-              anchor="bottom"
-              disableSwipeToOpen>
-              {renderMenuItems()}
-            </SwipeableDrawerRoot>
-          ) : (
-            <MenuRoot className={classes.menuRoot} anchorEl={anchorEl} open={open} onClose={handleClose}>
-              {renderMenuItems()}
-            </MenuRoot>
+          {open && (
+            <>
+              {isMobile ? (
+                <SwipeableDrawerRoot
+                  className={classes.drawerRoot}
+                  PaperProps={{className: classes.paper}}
+                  open
+                  onClose={handleClose}
+                  onOpen={handleOpen}
+                  anchor="bottom"
+                  disableSwipeToOpen>
+                  {renderMenuItems()}
+                </SwipeableDrawerRoot>
+              ) : (
+                <MenuRoot className={classes.menuRoot} anchorEl={anchorEl} open onClose={handleClose}>
+                  {renderMenuItems()}
+                </MenuRoot>
+              )}
+            </>
           )}
         </>
       )}

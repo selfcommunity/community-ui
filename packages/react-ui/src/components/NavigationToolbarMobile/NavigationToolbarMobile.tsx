@@ -72,11 +72,11 @@ export interface NavigationToolbarMobileProps extends ToolbarProps {
    * Component for Navigation Settings
    */
   NavigationSettingsIconButtonComponent?: (inProps: NavigationSettingsIconButtonProps) => JSX.Element;
-	/**
-	 * Props to spread to the ComposerIconButton
-	 * @default {}
-	 */
-	ComposerIconButtonProps?: ComposerIconButtonProps;
+  /**
+   * Props to spread to the ComposerIconButton
+   * @default {}
+   */
+  ComposerIconButtonProps?: ComposerIconButtonProps;
 }
 
 /**
@@ -128,7 +128,7 @@ export default function NavigationToolbarMobile(inProps: NavigationToolbarMobile
     endActions = null,
     NavigationMenuIconButtonComponent = NavigationMenuIconButton,
     NavigationSettingsIconButtonComponent = NavigationSettingsIconButton,
-		ComposerIconButtonProps = {},
+    ComposerIconButtonProps = {},
     ...rest
   } = props;
 
@@ -158,6 +158,7 @@ export default function NavigationToolbarMobile(inProps: NavigationToolbarMobile
       preferences &&
       features &&
       features.includes(SCFeatureName.TAGGING) &&
+      features.includes(SCFeatureName.EVENT) &&
       SCPreferences.CONFIGURATIONS_EVENTS_ENABLED in preferences &&
       preferences[SCPreferences.CONFIGURATIONS_EVENTS_ENABLED].value,
     [preferences, features]
@@ -219,8 +220,6 @@ export default function NavigationToolbarMobile(inProps: NavigationToolbarMobile
       )}
       {endActions}
       {(!postOnlyStaffEnabled || (UserUtils.isStaff(scUserContext.user) && postOnlyStaffEnabled)) &&
-        groupsEnabled &&
-        eventsEnabled &&
         (scUserContext.user || contentAvailable) &&
         exploreStreamEnabled && <ComposerIconButton {...ComposerIconButtonProps} />}
       {scUserContext.user && (groupsEnabled || eventsEnabled) && (

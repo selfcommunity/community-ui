@@ -17,6 +17,7 @@ import {
   USER_PROFILE_ROUTE_NAME,
   USER_PROFILE_SETTINGS_ROUTE_NAME,
   defaultRoutes,
+  LIVESTREAM_ROUTE_NAME,
 } from '../../../constants/Routes';
 
 /**
@@ -94,6 +95,7 @@ export default function SCRoutingProvider({children = null}: {children: React.Re
           scPreferencesContext.preferences[SCPreferences.CONFIGURATIONS_URL_TEMPLATE_USER_PRIVATE_MESSAGES].value
         ),
         [INCUBATOR_ROUTE_NAME]: normalizeUrl(scPreferencesContext.preferences[SCPreferences.CONFIGURATIONS_URL_TEMPLATE_INCUBATOR].value),
+        [LIVESTREAM_ROUTE_NAME]: normalizeUrl(scPreferencesContext.preferences[SCPreferences.CONFIGURATIONS_URL_TEMPLATE_LIVE_STREAM].value),
       };
     }
     return {};

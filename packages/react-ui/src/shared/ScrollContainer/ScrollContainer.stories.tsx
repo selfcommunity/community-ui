@@ -53,6 +53,6 @@ const template = (args) => (
   </div>
 );
 
-export const Base: StoryObj<ScrollContainer> = {
+export const Base: StoryObj<typeof ScrollContainer> = {
   render: template
 };

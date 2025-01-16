@@ -31,6 +31,10 @@ export const getEventObjectCacheKey = (id) => `${EVENT_OBJECT_CACHE_PREFIX_KEY}$
 export const EVENTS_OBJECT_CACHE_PREFIX_KEY = '_evts_';
 export const getEventsObjectCacheKey = () => `${EVENTS_OBJECT_CACHE_PREFIX_KEY}`;
 
+/** EVENT OBJECT **/
+export const LIVESTREAM_OBJECT_CACHE_PREFIX_KEY = '_liveStream_';
+export const getLiveStreamObjectCacheKey = (id) => `${LIVESTREAM_OBJECT_CACHE_PREFIX_KEY}${id}`;
+
 /** GROUP OBJECT **/
 export const GROUP_OBJECT_CACHE_PREFIX_KEY = '_grp_';
 export const getGroupObjectCacheKey = (id) => `${GROUP_OBJECT_CACHE_PREFIX_KEY}${id}`;
@@ -94,6 +98,7 @@ export const USER_OTHER_EVENTS_STATE_CACHE_PREFIX_KEY = '_uOtherEvents_';
 export const USER_PARTECIPANTS_EVENTS_STATE_CACHE_PREFIX_KEY = '_uPartecipantsEvents_';
 export const USER_INVITED_EVENTS_STATE_CACHE_PREFIX_KEY = '_uInvitedEvents_';
 export const USER_REQUESTS_EVENTS_STATE_CACHE_PREFIX_KEY = '_uRequestsEvents_';
+export const USER_LIVE_STREAM_CACHE_PREFIX_KEY = '_uUserLives_';
 export const EVENT_MEDIA_STATE_CACHE_PREFIX_KEY = '_eMedia_';
 export const USER_CONNECTIONS_TOOLS_STATE_CACHE_PREFIX_KEY = '_uConWidget_';
 export const USER_CONNECTIONS_REQUESTS_TOOLS_STATE_CACHE_PREFIX_KEY = '_uConReqWidget_';

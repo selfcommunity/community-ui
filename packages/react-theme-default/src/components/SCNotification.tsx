@@ -308,6 +308,33 @@ const Component = {
         backgroundColor: 'transparent !important'
       }
     }),
+    liveStreamRoot: ({theme}: any) => ({
+      '& .SCNotification-username, & a': {
+        fontWeight: theme.typography.fontWeightBold
+      },
+      '& .SCNotificationItem-primary': {
+        '& .MuiIcon-root': {
+          float: 'right',
+          fontSize: '20px',
+          marginLeft: theme.spacing(0.5)
+        },
+        '& .SCEvent-root': {
+          width: '100%',
+          '& .SCEvent-snippet-root': {
+            paddingLeft: '0 !important'
+          }
+        }
+      },
+      '& .SCNotificationItem-secondary': {
+        textTransform: 'capitalize'
+      },
+      '& .SCNotification-snippet-time': {
+        paddingLeft: theme.spacing(5)
+      },
+      '& .SCEvent-snippet-root': {
+        backgroundColor: 'transparent !important'
+      }
+    }),
     groupRoot: ({theme}: any) => ({}),
     undeletedForRoot: ({theme}: any) => ({
       '& .SCNotification-undeleted-icon': {

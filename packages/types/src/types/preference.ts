@@ -104,6 +104,7 @@ export enum SCPreferenceName {
   URL_TEMPLATE_NOTIFICATIONS = 'url_template_notifications',
   URL_TEMPLATE_USER_PRIVATE_MESSAGES = 'url_template_private_message',
   URL_TEMPLATE_INCUBATOR = 'url_template_incubator',
+  URL_TEMPLATE_LIVE_STREAM = 'url_template_live_stream',
   APP_URL = 'app_url',
   USER_METADATA_DEFINITIONS = 'user_metadata_definition',
   TAG_MANAGER_CONTAINER_ID = 'tag_manager_container_id',
@@ -137,8 +138,11 @@ export enum SCPreferenceName {
   EVENTS_VISIBILITY_ENABLED = 'events_visibility_enabled',
   EVENTS_PRIVATE_ENABLED = 'events_private_enabled',
   EVENTS_ONLY_STAFF_ENABLED = 'events_only_staff_enabled',
+  LIVE_STREAM_ENABLED = 'live_stream_enabled',
+  LIVE_STREAM_ONLY_STAFF_ENABLED = 'live_stream_only_staff_enabled',
   ONBOARDING_ENABLED = 'onboarding_enabled',
-  ONBOARDING_HIDDEN = 'onboarding_hidden'
+  ONBOARDING_HIDDEN = 'onboarding_hidden',
+  SUBSCRIPTION_TIER = 'subscription_tier'
 }
 
 /**

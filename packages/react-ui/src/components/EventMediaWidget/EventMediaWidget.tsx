@@ -410,7 +410,7 @@ export default function EventMediaWidget(inProps: EventMediaWidgetProps) {
           className={classes.dialogRoot}
           title={intl.formatMessage(messages.title, {user: scEvent.managed_by.username})}
           onClose={handleToggleDialogOpen}
-          open={openDialog}
+          open
           {...dialogProps}>
           <InfiniteScroll
             dataLength={medias.length}
@@ -453,7 +453,7 @@ export default function EventMediaWidget(inProps: EventMediaWidgetProps) {
 
       {openDialogConfirm && (
         <ConfirmDialog
-          open={openDialogConfirm}
+          open
           title={<FormattedMessage id="ui.eventMediaWidget.dialog.title" defaultMessage="ui.eventMediaWidget.dialog.title" />}
           content={<FormattedMessage id="ui.eventMediaWidget.dialog.msg" defaultMessage="ui.eventMediaWidget.dialog.msg" />}
           btnConfirm={<FormattedMessage id="ui.eventMediaWidget.dialog.confirm" defaultMessage="ui.eventMediaWidget.dialog.confirm" />}

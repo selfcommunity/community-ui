@@ -16,7 +16,8 @@ import {
   SCFeedWidgetType,
   UserFollowedCategoriesWidget,
   UserFollowedUsersWidget,
-  UserFollowersWidget
+  UserFollowersWidget,
+  UserLiveStreamWidget
 } from '@selfcommunity/react-ui';
 import {UserFeedSkeleton} from './index';
 import {useThemeProps} from '@mui/system';
@@ -91,24 +92,31 @@ export interface UserFeedProps {
 const WIDGETS: SCFeedWidgetType[] = [
   {
     type: 'widget',
-    component: UserFollowedCategoriesWidget,
+    component: UserLiveStreamWidget,
     componentProps: {},
     column: 'right',
     position: 0
   },
   {
     type: 'widget',
-    component: UserFollowedUsersWidget,
+    component: UserFollowedCategoriesWidget,
     componentProps: {},
     column: 'right',
     position: 1
   },
   {
     type: 'widget',
-    component: UserFollowersWidget,
+    component: UserFollowedUsersWidget,
     componentProps: {},
     column: 'right',
     position: 2
+  },
+  {
+    type: 'widget',
+    component: UserFollowersWidget,
+    componentProps: {},
+    column: 'right',
+    position: 3
   }
 ];
 

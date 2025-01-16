@@ -12,53 +12,44 @@ const Component = {
           paddingTop: 0,
           paddingBottom: 0,
           paddingLeft: 0,
-          paddingRight: 0,
-          '& .SCBaseItemButton-actions': {
-            right: 0
-          }
+          paddingRight: 0
         }
       },
       '& .SCBaseItemButton-content': {
         display: 'flex',
-        flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        width: '100%'
-      },
-      '& .SCBaseItemButton-image': {
-        flexShrink: 0,
-        marginRight: theme.spacing(2)
-      },
-      '& .SCBaseItemButton-text': {
-        flex: '1 1 auto',
-        marginTop: theme.spacing(),
-        marginBottom: theme.spacing(),
-        textAlign: 'left'
-      },
-      '& .SCBaseItemButton-primary': {
-        color: theme.palette.text.primary
-      },
-      '& .SCBaseItemButton-secondary': {
-        color: theme.palette.text.secondary
-      },
-      '& .SCBaseItemButton-primary, & .SCBaseItemButton-secondary': {
-        whiteSpace: 'nowrap',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        display: 'block'
+        gap: theme.spacing(2),
+        '& .SCBaseItemButton-image': {
+          flexShrink: 0
+        },
+        '& .SCBaseItemButton-text': {
+          marginTop: theme.spacing(),
+          marginBottom: theme.spacing(),
+          '& .SCBaseItemButton-primary': {
+            color: theme.palette.text.primary
+          },
+          '& .SCBaseItemButton-secondary': {
+            color: theme.palette.text.secondary
+          }
+        }
       },
       '&.SCBaseItemButton-with-actions': {
-        '& .SCBaseItemButton-text > *': {
-          maxWidth: `calc(100% - ${theme.spacing(14)})`,
-          [theme.breakpoints.only('md')]: {
-            maxWidth: `calc(100% - ${theme.spacing(15)})`
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: '6px',
+        '& .SCBaseItemButton-content': {
+          overflow: 'hidden',
+          '& .SCBaseItemButton-text': {
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            flexGrow: 1
           }
         },
         '& .SCBaseItemButton-actions': {
-          position: 'absolute',
-          right: theme.spacing(2),
-          top: '50%',
-          transform: 'translateY(-50%)',
+          flexShrink: 0,
           maxWidth: theme.spacing(19)
         }
       }
