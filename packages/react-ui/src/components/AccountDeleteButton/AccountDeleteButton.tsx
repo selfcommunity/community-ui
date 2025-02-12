@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import {styled} from '@mui/material/styles';
 import classNames from 'classnames';
 import {useThemeProps} from '@mui/system';
 import {Button, ButtonProps} from '@mui/material';
 import {FormattedMessage} from 'react-intl';
-import {SCUserContextType, useSCUser} from '@selfcommunity/react-core';
+import {SCUserContextType, UserUtils, useSCUser} from '@selfcommunity/react-core';
 import {SCUserType} from '@selfcommunity/types';
 import BaseDialog from '../../shared/BaseDialog';
 import AccountDelete from '../AccountDelete';
@@ -77,6 +77,7 @@ export default function AccountDeleteButton(inProps: AccountDeleteButtonProps): 
 
   // CONTEXT
   const scUserContext: SCUserContextType = useSCUser();
+  const isAdmin = useMemo(() => UserUtils.isCommunityCreator(scUserContext.user), [scUserContext.user]);
 
   // HANDLERS
   const handleOpen = () => {
@@ -92,7 +93,7 @@ export default function AccountDeleteButton(inProps: AccountDeleteButtonProps): 
   };
 
   // RENDER
-  if (!scUserContext.user) {
+  if (!scUserContext.user || isAdmin) {
     return null;
   }
   return (

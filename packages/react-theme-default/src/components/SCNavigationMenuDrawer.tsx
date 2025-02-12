@@ -40,6 +40,10 @@ const Component = {
       },
       '& .SCBaseItemButton-text ': {
         maxWidth: '80%'
+      },
+      '& .SCNavigationMenuDrawer-drawer-footer-live-button': {
+        margin: theme.spacing(3),
+        maxWidth: 270
       }
     })
   }

@@ -58,8 +58,7 @@ export function getContributionSnippet(obj) {
  * @param handleUrl Func that handle urls
  */
 export function getContributionHtml(html, handleUrl) {
-  const _html = html.replace(/<p\b[^>]*>(.*?)<\/p>/g, (match, content) => content);
-  return _html.replace(/<mention.*? id="([0-9]+)"{1}.*?>@([a-z\d_-]+)<\/mention>/gi, (match, id, username) => {
+  return html.replace(/<mention.*? id="([0-9]+)"{1}.*?>@([a-z\d_-]+)<\/mention>/gi, (match, id, username) => {
     return `<a href='${handleUrl(SCRoutes.USER_PROFILE_ROUTE_NAME, {id, username})}'>@${username}</a>`;
   });
 }

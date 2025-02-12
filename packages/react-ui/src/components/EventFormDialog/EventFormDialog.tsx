@@ -38,7 +38,7 @@ export interface EventFormDialogProps extends BaseDialogProps {
 
   /**
    * Props to spread to EventForm component
-   * @default {}
+   * @default undefined
    */
   EventFormComponentProps?: EventFormProps;
 
@@ -73,11 +73,11 @@ export default function EventFormDialog(inProps: EventFormDialogProps): JSX.Elem
     props: inProps,
     name: PREFIX
   });
-  const {className, open = true, onClose, EventFormComponentProps = {}, ...rest} = props;
+  const {className, open = true, onClose, EventFormComponentProps, ...rest} = props;
 
   const handleSuccess = useCallback(
     (event: SCEventType) => {
-      EventFormComponentProps.onSuccess?.(event);
+      EventFormComponentProps?.onSuccess?.(event);
       onClose?.();
     },
     [onClose, EventFormComponentProps]
@@ -100,7 +100,7 @@ export default function EventFormDialog(inProps: EventFormDialogProps): JSX.Elem
       onClose={onClose}
       className={classNames(classes.root, className)}
       {...rest}>
-      <EventForm {...EventFormComponentProps} onSuccess={handleSuccess} />
+      <EventForm {...(EventFormComponentProps && EventFormComponentProps)} onSuccess={handleSuccess} />
     </Root>
   );
 }

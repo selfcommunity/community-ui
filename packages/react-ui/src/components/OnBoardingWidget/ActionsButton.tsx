@@ -153,28 +153,32 @@ export default function OnBoardingActionsButton(inProps: OnBoardingActionsButton
       <Root className={classNames(classes.root, className)} {...rest} onClick={handleOpen}>
         <Icon>more_vert</Icon>
       </Root>
-      {isMobile ? (
-        <SwipeableDrawerRoot
-          onClick={() => setAnchorEl(null)}
-          className={classes.drawerRoot}
-          anchor="bottom"
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          PaperProps={{className: classes.paper}}
-          disableSwipeToOpen>
-          <List>{renderList()}</List>
-        </SwipeableDrawerRoot>
-      ) : (
-        <MenuRoot
-          onClick={() => setAnchorEl(null)}
-          className={classes.menuRoot}
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-          PaperProps={{className: classes.paper}}>
-          {renderList()}
-        </MenuRoot>
+      {Boolean(anchorEl) && (
+        <>
+          {isMobile ? (
+            <SwipeableDrawerRoot
+              onClick={() => setAnchorEl(null)}
+              className={classes.drawerRoot}
+              anchor="bottom"
+              open
+              onClose={handleClose}
+              onOpen={handleOpen}
+              PaperProps={{className: classes.paper}}
+              disableSwipeToOpen>
+              <List>{renderList()}</List>
+            </SwipeableDrawerRoot>
+          ) : (
+            <MenuRoot
+              onClick={() => setAnchorEl(null)}
+              className={classes.menuRoot}
+              anchorEl={anchorEl}
+              open
+              onClose={handleClose}
+              PaperProps={{className: classes.paper}}>
+              {renderList()}
+            </MenuRoot>
+          )}
+        </>
       )}
     </>
   );

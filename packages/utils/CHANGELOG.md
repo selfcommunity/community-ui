@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.64-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/utils@0.2.64-alpha.0...@selfcommunity/utils@0.2.64-alpha.1) (2025-01-08)
+
+
+### Bug Fixes
+
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+
+
+
+
+
+## [0.2.64-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/utils@0.2.63...@selfcommunity/utils@0.2.64-alpha.0) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/utils
+
+
+
+
+
 ## [0.2.63](https://github.com/selfcommunity/community-js/compare/@selfcommunity/utils@0.2.63-alpha.1...@selfcommunity/utils@0.2.63) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/utils

@@ -1,12 +1,12 @@
-import { Button, ButtonProps, Icon } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import { useThemeProps } from '@mui/system';
-import { SCPreferences, SCPreferencesContextType, SCUserContext, SCUserContextType, useSCPreferences } from '@selfcommunity/react-core';
-import { SCFeatureName } from '@selfcommunity/types';
+import {Button, ButtonProps, Icon} from '@mui/material';
+import {styled} from '@mui/material/styles';
+import {useThemeProps} from '@mui/system';
+import {SCPreferences, SCPreferencesContextType, SCUserContext, SCUserContextType, useSCPreferences} from '@selfcommunity/react-core';
+import {SCFeatureName} from '@selfcommunity/types';
 import classNames from 'classnames';
-import React, { useContext, useMemo } from 'react';
-import { FormattedMessage } from 'react-intl';
-import EventFormDialog, { EventFormDialogProps } from '../EventFormDialog';
+import React, {useContext, useMemo} from 'react';
+import {FormattedMessage} from 'react-intl';
+import EventFormDialog, {EventFormDialogProps} from '../EventFormDialog';
 
 const PREFIX = 'SCCreateEventButton';
 
@@ -17,7 +17,7 @@ const classes = {
 const Root = styled(Button, {
   name: PREFIX,
   slot: 'Root',
-  overridesResolver: (props, styles) => styles.root
+  overridesResolver: (_props, styles) => styles.root
 })(() => ({}));
 
 export interface CreateEventButtonProps extends ButtonProps {
@@ -27,7 +27,7 @@ export interface CreateEventButtonProps extends ButtonProps {
    */
   className?: string;
   /**
-   * Props to spread to CreateGroup component
+   * Props to spread to CreateEvent component
    * @default empty object
    */
   EventFormDialogComponentProps?: EventFormDialogProps;
@@ -63,7 +63,7 @@ export default function CreateEventButton(inProps: CreateEventButtonProps): JSX.
     props: inProps,
     name: PREFIX
   });
-  const { className, EventFormDialogComponentProps = {}, children, ...rest } = props;
+  const {className, EventFormDialogComponentProps = {}, children, ...rest} = props;
 
   // CONTEXT
   const scUserContext: SCUserContextType = useContext(SCUserContext);
@@ -73,7 +73,7 @@ export default function CreateEventButton(inProps: CreateEventButtonProps): JSX.
 
   // CONST
   const authUserId = scUserContext.user ? scUserContext.user.id : null;
-  const { preferences, features }: SCPreferencesContextType = useSCPreferences();
+  const {preferences, features}: SCPreferencesContextType = useSCPreferences();
   const eventsEnabled = useMemo(
     () =>
       preferences &&

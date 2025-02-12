@@ -209,7 +209,7 @@ export default function UserProfileHeader(inProps: UserProfileHeaderProps): JSX.
             </Typography>
           )}
           {scUser.website && (
-            <Link className={classes.website} target="blank" to={scUser.website}>
+            <Link className={classes.website} target="_blank" to={scUser.website}>
               <Typography variant="body2">{scUser.website}</Typography>
             </Link>
           )}

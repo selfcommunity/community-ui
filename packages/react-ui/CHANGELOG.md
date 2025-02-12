@@ -3,6 +3,492 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0-alpha.17](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.16...@selfcommunity/react-ui@0.11.0-alpha.17) (2025-02-11)
+
+
+### Bug Fixes
+
+* live stream ([48bac91](https://github.com/selfcommunity/community-js/commit/48bac911f55dd95158b2ae438f18a8c9746161ac))
+
+
+
+
+
+# [0.11.0-alpha.16](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.15...@selfcommunity/react-ui@0.11.0-alpha.16) (2025-02-06)
+
+
+### Bug Fixes
+
+* warning live stream form in a free trial community ([96fe99b](https://github.com/selfcommunity/community-js/commit/96fe99b443b74e9ce4660b097fb9d07ad7413eb7))
+* warning live stream form in a free trial community ([44a7667](https://github.com/selfcommunity/community-js/commit/44a766717ec7f5bf6b8c9f90a21c867f5a5649b0))
+
+
+
+
+
+# [0.11.0-alpha.15](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.14...@selfcommunity/react-ui@0.11.0-alpha.15) (2025-01-30)
+
+
+### Bug Fixes
+
+* added required prop to redirect after create an event ([b2cdee4](https://github.com/selfcommunity/community-js/commit/b2cdee473ce1db07c85d8e787802b59ae9ff133d))
+
+
+
+
+
+# [0.11.0-alpha.14](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.13...@selfcommunity/react-ui@0.11.0-alpha.14) (2025-01-30)
+
+
+### Bug Fixes
+
+* added required prop to redirect after create an event ([cfbbed4](https://github.com/selfcommunity/community-js/commit/cfbbed46aac380dfdbf020b56100b40100965c68))
+
+
+
+
+
+# [0.11.0-alpha.13](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.12...@selfcommunity/react-ui@0.11.0-alpha.13) (2025-01-30)
+
+
+### Bug Fixes
+
+* added required prop to redirect after create an event ([d08d158](https://github.com/selfcommunity/community-js/commit/d08d15800f96e0697200bdae2a917183b902abd8))
+
+
+
+
+
+# [0.11.0-alpha.12](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.11...@selfcommunity/react-ui@0.11.0-alpha.12) (2025-01-30)
+
+**Note:** Version bump only for package @selfcommunity/react-ui
+
+
+
+
+
+# [0.11.0-alpha.11](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.10...@selfcommunity/react-ui@0.11.0-alpha.11) (2025-01-22)
+
+
+### Bug Fixes
+
+* fixed to show back button on CreateLiveStreamDialog ([b3dde17](https://github.com/selfcommunity/community-js/commit/b3dde17345af31a11bf0d204d540ab2092579549))
+
+
+
+
+
+# [0.11.0-alpha.10](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.9...@selfcommunity/react-ui@0.11.0-alpha.10) (2025-01-22)
+
+
+### Bug Fixes
+
+* fixed text overflow on LiveStreamFormSettings ([da77c9d](https://github.com/selfcommunity/community-js/commit/da77c9d5fed422c60a0af1dee392117826dd951d))
+
+
+
+
+
+# [0.11.0-alpha.9](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.8...@selfcommunity/react-ui@0.11.0-alpha.9) (2025-01-21)
+
+**Note:** Version bump only for package @selfcommunity/react-ui
+
+
+
+
+
+# [0.11.0-alpha.8](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.7...@selfcommunity/react-ui@0.11.0-alpha.8) (2025-01-21)
+
+**Note:** Version bump only for package @selfcommunity/react-ui
+
+
+
+
+
+# [0.11.0-alpha.7](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.6...@selfcommunity/react-ui@0.11.0-alpha.7) (2025-01-16)
+
+
+### Bug Fixes
+
+* FeedObject activities min-height ([ff030e3](https://github.com/selfcommunity/community-js/commit/ff030e3b3171558410ae26860c8dc070cbd3ddca))
+
+
+
+
+
+# [0.11.0-alpha.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.5...@selfcommunity/react-ui@0.11.0-alpha.6) (2025-01-15)
+
+
+### Bug Fixes
+
+* FeedObject format content ([52729f8](https://github.com/selfcommunity/community-js/commit/52729f83e4b0501b93d45adac1db02994516078d))
+
+
+
+
+
+# [0.11.0-alpha.5](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.4...@selfcommunity/react-ui@0.11.0-alpha.5) (2025-01-15)
+
+
+### Bug Fixes
+
+* ComposerIconButton ([eba379d](https://github.com/selfcommunity/community-js/commit/eba379dc5f21d12a62a9462253c170ee4b9a0ff2))
+* FeedObject format content ([0eb9341](https://github.com/selfcommunity/community-js/commit/0eb934199f8b7524aa1e916db684b8a0cf9865d4))
+* fixed some dialog opening condition ([4b20867](https://github.com/selfcommunity/community-js/commit/4b20867fe591c484543f2fa8aebd36f27ab3f441))
+* liveStream dialog copy ([3b8accc](https://github.com/selfcommunity/community-js/commit/3b8accc926af1021da37699ab8b4837bcb7775a1))
+* LiveStreamSelector component ([5e24d4b](https://github.com/selfcommunity/community-js/commit/5e24d4b994ff49bd19b3eab357265e57133edf17))
+* ToolbarPlugin, PrivateMessage content style ([f0547e5](https://github.com/selfcommunity/community-js/commit/f0547e59e67c55b9e3afa8f48ec4d94df160b587))
+
+
+
+
+
+# [0.11.0-alpha.4](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.3...@selfcommunity/react-ui@0.11.0-alpha.4) (2025-01-14)
+
+
+### Bug Fixes
+
+* error on play video ([00603d9](https://github.com/selfcommunity/community-js/commit/00603d9d60defefbef0f8a5aa5113ba9c2cdab65))
+
+
+
+
+
+# [0.11.0-alpha.3](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.2...@selfcommunity/react-ui@0.11.0-alpha.3) (2025-01-14)
+
+
+### Bug Fixes
+
+* Composer with fixed toolbar editor when create discussion ([3cdc1a5](https://github.com/selfcommunity/community-js/commit/3cdc1a52e3b4d5667c6c1e030303bdc07b391c2b))
+* font ComposerIconButton ([4b2530b](https://github.com/selfcommunity/community-js/commit/4b2530bc317c0d8aa9c484422f9a56f81187eaf6))
+* font ComposerIconButton ([fd285fd](https://github.com/selfcommunity/community-js/commit/fd285fd504dbb81e17d599b7314a42f9d6a96b49))
+
+
+
+
+
+# [0.11.0-alpha.2](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.1...@selfcommunity/react-ui@0.11.0-alpha.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* NavigationToolbar ([5f80e78](https://github.com/selfcommunity/community-js/commit/5f80e78cdb3c5ef5b3f089b64ee2be9b2491723a))
+
+
+
+
+
+# [0.11.0-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.11.0-alpha.0...@selfcommunity/react-ui@0.11.0-alpha.1) (2025-01-13)
+
+
+### Bug Fixes
+
+* optimization ([8a8399f](https://github.com/selfcommunity/community-js/commit/8a8399f6e6a2f16fc508c20d623c76c11e7dbe32))
+
+
+
+
+
+# [0.11.0-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.17...@selfcommunity/react-ui@0.11.0-alpha.0) (2025-01-13)
+
+
+### Bug Fixes
+
+* optimization ([c69948e](https://github.com/selfcommunity/community-js/commit/c69948e9a5023a08227eb0482ce08a06f9b2a826))
+* optimization ([f04e305](https://github.com/selfcommunity/community-js/commit/f04e305752c5f69d04faa7720494851ed65942c2))
+
+
+### Features
+
+* modified ComposerIconButton to accept Menu ([96189ba](https://github.com/selfcommunity/community-js/commit/96189ba88f517868e1895e9aa2f18a81e35935ba))
+
+
+
+
+
+## [0.10.5-alpha.17](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.16...@selfcommunity/react-ui@0.10.5-alpha.17) (2025-01-13)
+
+
+### Bug Fixes
+
+* style liveStream navigation ([fa19ef9](https://github.com/selfcommunity/community-js/commit/fa19ef9220037e00170598f316a006e2dad26091))
+
+
+
+
+
+## [0.10.5-alpha.16](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.15...@selfcommunity/react-ui@0.10.5-alpha.16) (2025-01-13)
+
+
+### Bug Fixes
+
+* style liveStream navigation ([c315f47](https://github.com/selfcommunity/community-js/commit/c315f47d854b6739cee63d38bf82fc5aee0f4a14))
+
+
+
+
+
+## [0.10.5-alpha.15](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.14...@selfcommunity/react-ui@0.10.5-alpha.15) (2025-01-13)
+
+
+### Bug Fixes
+
+* link livestream event ([4578d18](https://github.com/selfcommunity/community-js/commit/4578d18835428a147f6d54dfb12ace779b7e1ddc))
+
+
+
+
+
+## [0.10.5-alpha.14](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.13...@selfcommunity/react-ui@0.10.5-alpha.14) (2025-01-13)
+
+
+### Bug Fixes
+
+* create_live_stream and create_event permissions ([1856088](https://github.com/selfcommunity/community-js/commit/18560886796be2e23e02572627bb8be6048ca337))
+* icon CreateLiveStreamButton ([7d3b875](https://github.com/selfcommunity/community-js/commit/7d3b875baa23419126f12c83f1a17be1d30dc919))
+* livestream ([b891f46](https://github.com/selfcommunity/community-js/commit/b891f46d612f6a3ca55a35821c967cbf7679e7a3))
+* peerDependencies project root ([7c29158](https://github.com/selfcommunity/community-js/commit/7c29158cff08f6b43525a5e9a0c345cb3bc403ce))
+
+
+
+
+
+## [0.10.5-alpha.13](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.12...@selfcommunity/react-ui@0.10.5-alpha.13) (2025-01-10)
+
+
+### Bug Fixes
+
+* liveStream errors ([b399573](https://github.com/selfcommunity/community-js/commit/b3995738bda178ce82eace90f78b5d2b1f45b6c0))
+
+
+
+
+
+## [0.10.5-alpha.12](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.11...@selfcommunity/react-ui@0.10.5-alpha.12) (2025-01-09)
+
+
+### Bug Fixes
+
+* event id error on partecipate live ([8c7f9ce](https://github.com/selfcommunity/community-js/commit/8c7f9cebea886098d1e18bc1bc9b7a0e5b21cc4c))
+
+
+
+
+
+## [0.10.5-alpha.11](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.10...@selfcommunity/react-ui@0.10.5-alpha.11) (2025-01-09)
+
+
+### Bug Fixes
+
+* event id error on partecipate live ([325a53f](https://github.com/selfcommunity/community-js/commit/325a53f571410ecb009fa46b9cf0171b628f64f7))
+
+
+
+
+
+## [0.10.5-alpha.10](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.9...@selfcommunity/react-ui@0.10.5-alpha.10) (2025-01-09)
+
+**Note:** Version bump only for package @selfcommunity/react-ui
+
+
+
+
+
+## [0.10.5-alpha.9](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.8...@selfcommunity/react-ui@0.10.5-alpha.9) (2025-01-09)
+
+
+### Bug Fixes
+
+* event form ([2b12782](https://github.com/selfcommunity/community-js/commit/2b12782cc0d83d843f2c8f468b3a42091c854933))
+
+
+
+
+
+## [0.10.5-alpha.8](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.7...@selfcommunity/react-ui@0.10.5-alpha.8) (2025-01-09)
+
+
+### Bug Fixes
+
+* event form ([ee1e9ea](https://github.com/selfcommunity/community-js/commit/ee1e9ea51175306632fc42be716f7b85b351a33e))
+
+
+
+
+
+## [0.10.5-alpha.7](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.6...@selfcommunity/react-ui@0.10.5-alpha.7) (2025-01-09)
+
+
+### Bug Fixes
+
+* event form live stream ([5a53805](https://github.com/selfcommunity/community-js/commit/5a538058c97df59586789fa47c61703dc10e0f77))
+
+
+
+
+
+## [0.10.5-alpha.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.5...@selfcommunity/react-ui@0.10.5-alpha.6) (2025-01-09)
+
+
+### Bug Fixes
+
+* chip post group, event live stream ([18777f9](https://github.com/selfcommunity/community-js/commit/18777f926561ea35b086d42b33ff30be6389d560))
+
+
+
+
+
+## [0.10.5-alpha.5](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.4...@selfcommunity/react-ui@0.10.5-alpha.5) (2025-01-08)
+
+**Note:** Version bump only for package @selfcommunity/react-ui
+
+
+
+
+
+## [0.10.5-alpha.4](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.3...@selfcommunity/react-ui@0.10.5-alpha.4) (2025-01-08)
+
+
+### Bug Fixes
+
+* liveStreamPermissions ([e27a82c](https://github.com/selfcommunity/community-js/commit/e27a82cd1ac063c3ba752d4c366edd46b58ec792))
+
+
+
+
+
+## [0.10.5-alpha.3](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.2...@selfcommunity/react-ui@0.10.5-alpha.3) (2025-01-08)
+
+
+### Bug Fixes
+
+* added prop into EventParticipantsButton.stories ([1aaa453](https://github.com/selfcommunity/community-js/commit/1aaa45373bd55ba8f2681648eeae076114703a4b))
+* dependencies ([c2e095a](https://github.com/selfcommunity/community-js/commit/c2e095aa5e1f3de6dd1026ae52d0070af8e120be))
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* EventInfoDetails ([d869110](https://github.com/selfcommunity/community-js/commit/d8691100a6e3d5a4ea3f81f456b880938e3db324))
+* initial livestream ([f3a0751](https://github.com/selfcommunity/community-js/commit/f3a0751ad804366a9a1bf466b76cbe9bc87d688d))
+* initial livestream ([d81f1b7](https://github.com/selfcommunity/community-js/commit/d81f1b7640e34f1fd85ab2720b364f612cb4a505))
+* livestream ([89c9e54](https://github.com/selfcommunity/community-js/commit/89c9e546bdab64e18d2897f2d785e924faec64c9))
+* livestream ([6813faf](https://github.com/selfcommunity/community-js/commit/6813faf43ac23f57ac2a9d002b688d2da16cf4e9))
+* livestream ([4aad356](https://github.com/selfcommunity/community-js/commit/4aad356dea12e1e770258172598ac85d6fc5767c))
+* livestream ([6bad845](https://github.com/selfcommunity/community-js/commit/6bad845bb3e4e8d7a774600bb7ac97ca0da372e1))
+* livestream ([def85a6](https://github.com/selfcommunity/community-js/commit/def85a6afbf1bb50292fffbeaf416006d77bb2f4))
+* livestream ([22f7eda](https://github.com/selfcommunity/community-js/commit/22f7eda3dd11e302bb04512f674fdfb20db335ae))
+* livestream ([1a40790](https://github.com/selfcommunity/community-js/commit/1a407906414b46407ca61f04e60d098c9629a7ab))
+* livestream ([eafaa82](https://github.com/selfcommunity/community-js/commit/eafaa824d1092cfd97a73b68382c36cf8d667b1e))
+* livestream ([eacb6d1](https://github.com/selfcommunity/community-js/commit/eacb6d1c49dea4722a28d9e379466d62cf45e0b8))
+* livestream ([9378cc2](https://github.com/selfcommunity/community-js/commit/9378cc26c55c25c3a60c09e886d3d9bf0eb9f0ae))
+* livestream ([70d8372](https://github.com/selfcommunity/community-js/commit/70d8372a4c969d89813452a235e3fd30d7c366b4))
+* livestream ([18ef561](https://github.com/selfcommunity/community-js/commit/18ef561c17ef54f424602baf8e2b82e6ba8fa417))
+* livestream ([ff1cbb8](https://github.com/selfcommunity/community-js/commit/ff1cbb873c51c864c4dc38bd5bc6a42924502105))
+* livestream ([92b0f7e](https://github.com/selfcommunity/community-js/commit/92b0f7e4574365b6e08eb8218a430fb9c46b7957))
+* livestream ([5ac9b4c](https://github.com/selfcommunity/community-js/commit/5ac9b4cde6b1ba2228ca8cf87f95214894f99ae3))
+* livestream ([b377001](https://github.com/selfcommunity/community-js/commit/b37700156ff3d2effee800d85fd97ee72bde8ef1))
+* livestream ([1147934](https://github.com/selfcommunity/community-js/commit/11479345459d7fd0ac3f08c77b7379d795d779f0))
+* livestream ([50f493b](https://github.com/selfcommunity/community-js/commit/50f493b7b374215a995f1cd2879600fa4103e8ed))
+* livestream ([b4f0ebd](https://github.com/selfcommunity/community-js/commit/b4f0ebd98a2318650727677e1a08bc439ee6546f))
+* livestream ([a15c02f](https://github.com/selfcommunity/community-js/commit/a15c02f7dbe96b5eaaab60a04384a1cb928ba9b5))
+* livestream ([9139df7](https://github.com/selfcommunity/community-js/commit/9139df75d054dfcb1a6664f39fb146a16e69e77f))
+* livestream ([67c67cb](https://github.com/selfcommunity/community-js/commit/67c67cb8d1e28b44cbcd6e767080a394e74cd12f))
+* livestream ([b3df735](https://github.com/selfcommunity/community-js/commit/b3df7359d334426f09c6619630f1ade4a8ca462a))
+* livestream ([71d006b](https://github.com/selfcommunity/community-js/commit/71d006b642183eeda860f21772789a3cdf0bd3d7))
+* livestream ([f5535c1](https://github.com/selfcommunity/community-js/commit/f5535c161bfe9e634337e41ef22ed72389583557))
+* livestream ([ef2116f](https://github.com/selfcommunity/community-js/commit/ef2116fdbb4bc02009993809eb41072252903e8d))
+* livestream ([37d2561](https://github.com/selfcommunity/community-js/commit/37d2561218ed54bcbfc7e8725dd39ef7196e78d8))
+* livestream ([d9f1c98](https://github.com/selfcommunity/community-js/commit/d9f1c989b2f3f32c19475b11cb193ef5adf46b1a))
+* livestream ([e96ce30](https://github.com/selfcommunity/community-js/commit/e96ce30c08d0c7deca161d3e18c89ba72682e10b))
+* livestream ([6d6f23c](https://github.com/selfcommunity/community-js/commit/6d6f23c5d7ba6488113562e65a53f8fbf3983dcc))
+* livestream ([1377ebf](https://github.com/selfcommunity/community-js/commit/1377ebf0d7cf56fae914c2af5ae96d8161350d51))
+* livestream ([619ae76](https://github.com/selfcommunity/community-js/commit/619ae76fd237be7bad9bbec0afdc3052bf662d31))
+* livestream ([594e1c3](https://github.com/selfcommunity/community-js/commit/594e1c3659025a7d587edc55108ba527ca1f753d))
+* livestream ([44ad31b](https://github.com/selfcommunity/community-js/commit/44ad31b8ba204773f6451975523f8277fe265538))
+* livestream ([a5b9329](https://github.com/selfcommunity/community-js/commit/a5b9329f7b8b578f583653c6aa8e4478d422d9fa))
+* livestream ([6920be3](https://github.com/selfcommunity/community-js/commit/6920be38b7f3c7cf5e5e3dffd5033d0da8771dac))
+* livestream ([5edaa84](https://github.com/selfcommunity/community-js/commit/5edaa8489f5accf087793e060bc57fd58c1889c3))
+* livestream ([9e7d4f2](https://github.com/selfcommunity/community-js/commit/9e7d4f293b64190ed520194ab1ff4d381d9a443e))
+* livestream ([111eeae](https://github.com/selfcommunity/community-js/commit/111eeae0c2a9809edcc1b14ad8dbe0c8f34e2f08))
+* livestream ([b46f765](https://github.com/selfcommunity/community-js/commit/b46f7651c9c88ea875cf2fa27ac297237451421e))
+* livestream ([7feb3ba](https://github.com/selfcommunity/community-js/commit/7feb3ba3a18b863c53781dac8d12dbd026188b6a))
+* livestream ([c3d1a0e](https://github.com/selfcommunity/community-js/commit/c3d1a0e75bd37545c0cb55355b933f771efc17c1))
+* livestream ([621d293](https://github.com/selfcommunity/community-js/commit/621d29305b2c13b28bf1dc777794168f5b55341e))
+* livestream ([16759e7](https://github.com/selfcommunity/community-js/commit/16759e76a397437c5f9c01574a8d95fc396cd7ba))
+* livestream ([f1636e8](https://github.com/selfcommunity/community-js/commit/f1636e856c2e78e5040a868ea0bf161fc2dc9384))
+* livestream ([8da590e](https://github.com/selfcommunity/community-js/commit/8da590ef46d1063cc016fc6ba53eac91e0946f67))
+* livestream ([6beed7b](https://github.com/selfcommunity/community-js/commit/6beed7be1014314b58f48fc86d4f62c2729255aa))
+* livestream ([3cc5749](https://github.com/selfcommunity/community-js/commit/3cc5749afda55ae8185f98c8b7eb5174171720ef))
+* livestream ([835216c](https://github.com/selfcommunity/community-js/commit/835216ce6c38dd39d5fa480e472759b18b27b5bf))
+* livestream ([646a4e6](https://github.com/selfcommunity/community-js/commit/646a4e671fa5ab5cd1253155eba1bc521a4a9172))
+* livestream ([7fb821d](https://github.com/selfcommunity/community-js/commit/7fb821dc2dd6cbb574b801ed216272f40573868e))
+* livestream ([a6ba6af](https://github.com/selfcommunity/community-js/commit/a6ba6af20e8a5422b7c3658c8f4faa1bf436a57b))
+* livestream ([c618a19](https://github.com/selfcommunity/community-js/commit/c618a19c29446456c4d300cde6303a16c825c8b2))
+* livestream ([6f16326](https://github.com/selfcommunity/community-js/commit/6f1632698e7c00d3f3019cec12292d6044f95412))
+* livestream ([1cada61](https://github.com/selfcommunity/community-js/commit/1cada61139a8a64c33929126bbaae0908c7c3393))
+* livestream ([9e5f413](https://github.com/selfcommunity/community-js/commit/9e5f413f97ef3a471b3368b0dc79f450d0d0d163))
+* livestream ([d6c209b](https://github.com/selfcommunity/community-js/commit/d6c209b1ff2f23f4bb3176b6c4d33703c6fedd77))
+* livestream ([7b2ebd8](https://github.com/selfcommunity/community-js/commit/7b2ebd80ef47544cbc327a89eba27bcadb5375e4))
+* livestream ([f6ee43d](https://github.com/selfcommunity/community-js/commit/f6ee43d4802a4f82f623f0ef2311822ec02b1ba1))
+* livestream ([e4b8e4d](https://github.com/selfcommunity/community-js/commit/e4b8e4d17853be9a01796ee60bd278cb737557d3))
+* livestream ([c522b53](https://github.com/selfcommunity/community-js/commit/c522b531c9e91cd58db906783e7968a1bdb2534f))
+* livestream ([6f82d9e](https://github.com/selfcommunity/community-js/commit/6f82d9e7da6e2e8746fbe02a8e33c899ae3c2807))
+* livestream ([d51dfa7](https://github.com/selfcommunity/community-js/commit/d51dfa70e07225a1af3adc0474cc66ce009ec6d2))
+* livestream ([d960f5f](https://github.com/selfcommunity/community-js/commit/d960f5f8c5ffab0b2597350f3c659ab5f71701c2))
+* livestream ([cd0587c](https://github.com/selfcommunity/community-js/commit/cd0587cc8945595ad07c41ca91c93d9a89072761))
+* livestream ([5501bae](https://github.com/selfcommunity/community-js/commit/5501baead47dd4449ab5abde1917050e24480219))
+* livestream assets, resolution ([b9efade](https://github.com/selfcommunity/community-js/commit/b9efade9dfb276968fa11b829146ba2dc5479ea1))
+* livestream assets, resolution ([b7c31d2](https://github.com/selfcommunity/community-js/commit/b7c31d2bf6941f7f7f84a64dc9893b8a779080c7))
+* livestream ban user ([b1501da](https://github.com/selfcommunity/community-js/commit/b1501dab527231b0f26b668572a1756e768714f2))
+* liveStream check status ([3ddd8a7](https://github.com/selfcommunity/community-js/commit/3ddd8a7e8b747acd07169b7ce64f1e68e353121f))
+* liveStream check status ([31c5d4a](https://github.com/selfcommunity/community-js/commit/31c5d4a892e2597872e52468f26d751a53c9a56c))
+* livestream copy link ([42a8b35](https://github.com/selfcommunity/community-js/commit/42a8b35a9b4d67d683f7f31a7b73f171f7b2ac74))
+* livestream hideParticipantsList ([ecb5f7d](https://github.com/selfcommunity/community-js/commit/ecb5f7d015da188e286de31c362afc266f257152))
+* livestream in progress ([21f11ae](https://github.com/selfcommunity/community-js/commit/21f11ae69c2de4f60c87947012b0affb4593b250))
+* livestream in progress ([e7e0575](https://github.com/selfcommunity/community-js/commit/e7e0575714277f3ed0fd8829ad02cf37f2d8f60c))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+* livestream slug ([10c97ee](https://github.com/selfcommunity/community-js/commit/10c97eed1af6388c97e7b97fb5760e3e9d42f7d2))
+* liveStreamForm re-enable button on submit error ([b1f5f50](https://github.com/selfcommunity/community-js/commit/b1f5f50d50d43ab6cfef94d0ad8ae3589fa1233e))
+* update react-ui deps -> react-lazyload ([d492ec9](https://github.com/selfcommunity/community-js/commit/d492ec98f5ba4dd5b7272578012d96f25d6f62fd))
+
+
+
+
+
+## [0.10.5-alpha.2](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.1...@selfcommunity/react-ui@0.10.5-alpha.2) (2024-12-30)
+
+
+### Bug Fixes
+
+* feedObject comments pagination ([c476e6b](https://github.com/selfcommunity/community-js/commit/c476e6bab81829bed84571e1370da6813a3b95f3))
+* link in post target 'blank' and display inline ([2b7d90d](https://github.com/selfcommunity/community-js/commit/2b7d90d25d10bb607eb8140d2c7ce6b67ca195d5))
+* load video (problem with lazy load in the pwa preview container) ([19534d5](https://github.com/selfcommunity/community-js/commit/19534d55131093f9c9967951636f260b6fde93c9))
+* scrollContainer stories ([902ee0f](https://github.com/selfcommunity/community-js/commit/902ee0f4af2c9f0c1dd5dfd21edde857d257465c))
+* sort media in composer ([243fcfb](https://github.com/selfcommunity/community-js/commit/243fcfbfa752270ef78334a7b7fd7689983601bf))
+
+
+
+
+
+## [0.10.5-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.5-alpha.0...@selfcommunity/react-ui@0.10.5-alpha.1) (2024-12-19)
+
+
+### Performance Improvements
+
+* added it translation for cancel action in event form datetime pickers ([d7507bc](https://github.com/selfcommunity/community-js/commit/d7507bcd69f89296a67ce4f9d62859d93ea9e85b))
+
+
+
+
+
+## [0.10.5-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.4...@selfcommunity/react-ui@0.10.5-alpha.0) (2024-12-19)
+
+
+### Bug Fixes
+
+* removed account delete button for community creator. Linear issue: https://linear.app/quentral/issue/QUE-1058/inibire-la-possibilita-di-cancellare-lutente-che-ha-creato-la ([460e9bb](https://github.com/selfcommunity/community-js/commit/460e9bbac899cef3d7b2ee55d88fd975bbf0e918))
+
+
+
+
+
 ## [0.10.4](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-ui@0.10.4-alpha.17...@selfcommunity/react-ui@0.10.4) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/react-ui

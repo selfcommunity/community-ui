@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.7-alpha.9](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.8...@selfcommunity/react-core@0.6.7-alpha.9) (2025-02-11)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.8](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.7...@selfcommunity/react-core@0.6.7-alpha.8) (2025-01-21)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.7](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.6...@selfcommunity/react-core@0.6.7-alpha.7) (2025-01-15)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.5...@selfcommunity/react-core@0.6.7-alpha.6) (2025-01-13)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.5](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.4...@selfcommunity/react-core@0.6.7-alpha.5) (2025-01-10)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.4](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.3...@selfcommunity/react-core@0.6.7-alpha.4) (2025-01-09)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.3](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.2...@selfcommunity/react-core@0.6.7-alpha.3) (2025-01-09)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.2](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.1...@selfcommunity/react-core@0.6.7-alpha.2) (2025-01-08)
+
+
+### Bug Fixes
+
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* livestream ([50f493b](https://github.com/selfcommunity/community-js/commit/50f493b7b374215a995f1cd2879600fa4103e8ed))
+* livestream ([9139df7](https://github.com/selfcommunity/community-js/commit/9139df75d054dfcb1a6664f39fb146a16e69e77f))
+* livestream ([b3df735](https://github.com/selfcommunity/community-js/commit/b3df7359d334426f09c6619630f1ade4a8ca462a))
+* livestream ([71d006b](https://github.com/selfcommunity/community-js/commit/71d006b642183eeda860f21772789a3cdf0bd3d7))
+* livestream ([9e7d4f2](https://github.com/selfcommunity/community-js/commit/9e7d4f293b64190ed520194ab1ff4d381d9a443e))
+* livestream ([9e5f413](https://github.com/selfcommunity/community-js/commit/9e5f413f97ef3a471b3368b0dc79f450d0d0d163))
+* livestream ([d6c209b](https://github.com/selfcommunity/community-js/commit/d6c209b1ff2f23f4bb3176b6c4d33703c6fedd77))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+
+
+
+
+
+## [0.6.7-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.7-alpha.0...@selfcommunity/react-core@0.6.7-alpha.1) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
+## [0.6.7-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.6...@selfcommunity/react-core@0.6.7-alpha.0) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/react-core
+
+
+
+
+
 ## [0.6.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-core@0.6.6-alpha.2...@selfcommunity/react-core@0.6.6) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/react-core

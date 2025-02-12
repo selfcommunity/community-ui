@@ -19,7 +19,7 @@ export const Base: StoryObj<typeof GroupTemplate> = {
 
 export const BaseContainerFixed: StoryObj<typeof GroupTemplate> = {
 	args: {
-		groupId: 2
+		groupId: 3
 	},
 	render: (args) => {
 		return <div style={{position: 'fixed', bottom: 0, left: 0, right: 0, top: 70, zIndex: 1, maxWidth: '100% !important', height: '92vh', overflow: 'auto'}} id="scrollableDiv">

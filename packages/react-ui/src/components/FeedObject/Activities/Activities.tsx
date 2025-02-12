@@ -130,7 +130,7 @@ export default function Activities(props: ActivitiesProps): JSX.Element {
     feedObject,
     feedObjectType,
     cacheStrategy,
-    pageSize: 2,
+    pageSize: 1,
     orderBy:
       selectedActivities === SCFeedObjectActivitiesType.CONNECTIONS_COMMENTS
         ? SCCommentsOrderBy.CONNECTION_DESC
@@ -140,7 +140,7 @@ export default function Activities(props: ActivitiesProps): JSX.Element {
   });
 
   const objId = commentsObject.feedObject ? commentsObject.feedObject.id : null;
-  const skeletonsCount = Math.min(3, commentsObject.feedObject ? commentsObject.feedObject.comment_count : 2);
+  const skeletonsCount = Math.min(2, commentsObject.feedObject ? commentsObject.feedObject.comment_count : 2);
   const existFeedObjectActivities = feedObjectActivities && feedObjectActivities.length > 0;
 
   /**

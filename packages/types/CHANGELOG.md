@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.7-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/types@0.7.7-alpha.0...@selfcommunity/types@0.7.7-alpha.1) (2025-01-08)
+
+
+### Bug Fixes
+
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* livestream ([89c9e54](https://github.com/selfcommunity/community-js/commit/89c9e546bdab64e18d2897f2d785e924faec64c9))
+* livestream ([50f493b](https://github.com/selfcommunity/community-js/commit/50f493b7b374215a995f1cd2879600fa4103e8ed))
+* livestream ([b4f0ebd](https://github.com/selfcommunity/community-js/commit/b4f0ebd98a2318650727677e1a08bc439ee6546f))
+* livestream ([71d006b](https://github.com/selfcommunity/community-js/commit/71d006b642183eeda860f21772789a3cdf0bd3d7))
+* livestream ([f5535c1](https://github.com/selfcommunity/community-js/commit/f5535c161bfe9e634337e41ef22ed72389583557))
+* livestream ([ef2116f](https://github.com/selfcommunity/community-js/commit/ef2116fdbb4bc02009993809eb41072252903e8d))
+* livestream ([37d2561](https://github.com/selfcommunity/community-js/commit/37d2561218ed54bcbfc7e8725dd39ef7196e78d8))
+* livestream ([1377ebf](https://github.com/selfcommunity/community-js/commit/1377ebf0d7cf56fae914c2af5ae96d8161350d51))
+* livestream ([619ae76](https://github.com/selfcommunity/community-js/commit/619ae76fd237be7bad9bbec0afdc3052bf662d31))
+* livestream ([44ad31b](https://github.com/selfcommunity/community-js/commit/44ad31b8ba204773f6451975523f8277fe265538))
+* livestream ([a5b9329](https://github.com/selfcommunity/community-js/commit/a5b9329f7b8b578f583653c6aa8e4478d422d9fa))
+* livestream ([9e7d4f2](https://github.com/selfcommunity/community-js/commit/9e7d4f293b64190ed520194ab1ff4d381d9a443e))
+* livestream ([9e5f413](https://github.com/selfcommunity/community-js/commit/9e5f413f97ef3a471b3368b0dc79f450d0d0d163))
+* livestream ([b2ff2f5](https://github.com/selfcommunity/community-js/commit/b2ff2f50c0cde06b2974528013d62a317f7494c1))
+* livestream ([d6c209b](https://github.com/selfcommunity/community-js/commit/d6c209b1ff2f23f4bb3176b6c4d33703c6fedd77))
+* livestream assets, resolution ([b7c31d2](https://github.com/selfcommunity/community-js/commit/b7c31d2bf6941f7f7f84a64dc9893b8a779080c7))
+* livestream ban user ([d7d971b](https://github.com/selfcommunity/community-js/commit/d7d971b3f9df43638c8822158a3fa609b3ee4204))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+
+
+
+
+
+## [0.7.7-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/types@0.7.6...@selfcommunity/types@0.7.7-alpha.0) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/types
+
+
+
+
+
 ## [0.7.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/types@0.7.6-alpha.1...@selfcommunity/types@0.7.6) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/types

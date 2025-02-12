@@ -226,7 +226,7 @@ export default function TabContentComponent(props: TabComponentProps) {
           className={classes.dialogRoot}
           title={<FormattedMessage defaultMessage="ui.eventMembersWidget.title" id="ui.eventMembersWidget.title" />}
           onClose={handleToggleDialogOpen}
-          open={openDialog}
+          open
           {...dialogProps}>
           <InfiniteScroll
             dataLength={state.results.length}

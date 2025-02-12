@@ -5,8 +5,9 @@ import {SCContextType, SCNotification, SCUserContextType, useSCAlertMessages, us
 import {SCNotificationTopicType, SCNotificationTypologyType} from '@selfcommunity/types';
 import PubSub from 'pubsub-js';
 import {BaseVariant, useSnackbar} from 'notistack';
-import CustomSnackMessage from '../../shared/CustomSnackMessage';
+import {PREFIX} from './constants';
 import {SCBroadcastMessageTemplateType, SCNotificationObjectTemplateType} from '../../types';
+import CustomSnackMessage from '../../shared/CustomSnackMessage';
 import CommentNotification from '../Notification/Comment';
 import ContributionFollowNotification from '../Notification/ContributionFollow';
 import UserFollowNotification from '../Notification/UserFollow';
@@ -20,9 +21,9 @@ import UserBlockedNotification from '../Notification/UserBlocked';
 import Message from '../BroadcastMessages/Message';
 import {useThemeProps} from '@mui/system';
 import ContributionNotification from '../Notification/Contribution';
-import {PREFIX} from './constants';
 import GroupNotification from '../Notification/Group';
 import EventNotification from '../Notification/Event/Event';
+import LiveStreamNotification from '../Notification/LiveStream';
 
 const Root = styled(Box, {
   name: PREFIX,
@@ -136,6 +137,8 @@ export default function UserToastNotifications(inProps: ToastNotificationsProps)
         type === SCNotificationTypologyType.USER_REQUESTED_TO_JOIN_EVENT
       ) {
         content = <EventNotification notificationObject={n.notification_obj} template={SCNotificationObjectTemplateType.TOAST} />;
+      } else if (type === SCNotificationTypologyType.LIVE_STREAM_STARTED) {
+        content = <LiveStreamNotification notificationObject={n.notification_obj} template={SCNotificationObjectTemplateType.TOAST} />;
       }
     }
     if (n.activity_type && n.activity_type === SCNotificationTypologyType.NOTIFICATION_BANNER) {

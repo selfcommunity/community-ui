@@ -64,10 +64,10 @@ export default function CreateEventWidget(inProps: CreateEventWidgetProps) {
     [preferences, features]
   );
   const authUserId = scUserContext.user ? scUserContext.user.id : null;
-  const onlyStaffEnabled = useMemo(() => preferences[SCPreferences.CONFIGURATIONS_GROUPS_ONLY_STAFF_ENABLED].value, [preferences]);
+  const onlyStaffEnabled = useMemo(() => preferences[SCPreferences.CONFIGURATIONS_EVENTS_ONLY_STAFF_ENABLED].value, [preferences]);
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
-  const canCreateEvent = useMemo(() => scUserContext?.user?.permission?.create_group, [scUserContext?.user?.permission]);
+  const canCreateEvent = useMemo(() => scUserContext?.user?.permission?.create_event, [scUserContext?.user?.permission]);
 
   useEffect(() => {
     setLoading(false);

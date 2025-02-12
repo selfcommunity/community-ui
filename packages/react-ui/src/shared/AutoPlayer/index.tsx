@@ -80,7 +80,7 @@ export default function AutoPlayer(props: AutoPlayerProps) {
 
   useEffect(() => {
     if (played >= 10 && played <= 11) {
-      onVideoWatch();
+      onVideoWatch?.();
     }
   }, [played]);
 

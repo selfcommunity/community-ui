@@ -5,7 +5,8 @@ export default {
   title: 'Design System/React UI/Event Participants Button ',
   component: EventParticipantsButton,
   args: {
-    eventId: 121
+    eventId: 121,
+    hideCaption: false
   }
 } as Meta<typeof EventParticipantsButton>;
 

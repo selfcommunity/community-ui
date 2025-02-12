@@ -100,11 +100,7 @@ const Component = {
         flexWrap: 'nowrap',
         maxWidth: '100%',
         overflow: 'auto',
-        'MsOverflowStyle': 'none',  /* IE and Edge */
-        scrollbarWidth: 'none',
-        '&::-webkit-scrollbar': {
-          display: 'none'
-        },
+        scrollbarWidth: 'thin',
         '& .SCMediaFile-media': {
           backgroundSize: 'cover',
           backgroundPosition: 'center',

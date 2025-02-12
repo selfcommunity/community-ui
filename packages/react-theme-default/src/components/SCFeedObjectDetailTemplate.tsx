@@ -11,8 +11,19 @@ const Component = {
         '& .SCFeedObject-content': {
           '& .SCFeedObject-text-section .SCFeedObject-text': {
             '& span': {
-              display: 'inline-block',
+              display: 'inline'
+            },
+            '& span:not(:has(+ a))': {
               width: '100%'
+            },
+            '& a': {
+              display: 'inline-block',
+              margin: theme.spacing(0, 0.3)
+            },
+            '& a:hover': {
+              '& span': {
+                textDecoration: 'underline'
+              }
             }
           }
         }

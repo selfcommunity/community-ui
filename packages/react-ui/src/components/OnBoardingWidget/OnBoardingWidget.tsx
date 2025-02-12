@@ -314,17 +314,16 @@ const OnBoardingWidget = (inProps: OnBoardingWidgetProps) => {
 
   const startStep = async (stepId: number) => {
     showCategoriesWarningModal && setShowWarningCategoriesModal(false);
-    await OnBoardingService.startAStep(stepId, GenerateContentsParams)
-      .then(() => {
-        setIsGenerating(true);
-      })
-      .catch((error) => {
-        Logger.error(SCOPE_SC_UI, error);
-        enqueueSnackbar(<FormattedMessage id="ui.common.error.action" defaultMessage="ui.common.error.action" />, {
-          variant: 'error',
-          autoHideDuration: 3000
-        });
-      });
+		try {
+			await OnBoardingService.startAStep(stepId, GenerateContentsParams);
+			setIsGenerating(true);
+		} catch (error) {
+			Logger.error(SCOPE_SC_UI, error);
+			enqueueSnackbar(<FormattedMessage id="ui.common.error.action" defaultMessage="ui.common.error.action" />, {
+				variant: 'error',
+				autoHideDuration: 3000
+			});
+		}
   };
 
   const handlePreferencesUpdate = () => {

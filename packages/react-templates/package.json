@@ -1,124 +1,129 @@
 {
-  "name": "@selfcommunity/react-templates",
-  "version": "0.4.7",
-  "license": "MIT",
-  "private": false,
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "exports": {
-    ".": {
-      "require": "./lib/cjs/index.js",
-      "import": "./lib/esm/index.js"
-    },
-    "./*": {
-      "require": "./lib/cjs/*",
-      "import": "./lib/esm/*"
-    }
-  },
-  "sideEffects": false,
-  "description": "React Templates Components to integrate a Community created with SelfCommunity.",
-  "author": "SelfCommunity <https://www.selfcommunity.com>",
-  "keywords": [
-    "react",
-    "widgets",
-    "community",
-    "selfcommunity",
-    "community templates",
-    "selfcommunity templates",
-    "react-ui",
-    "react-components",
-    "react-templates"
-  ],
-  "scripts": {
-    "prepare": "install-peers -f",
-    "install-peers": "install-peers -f",
-    "test": "npm run lint && npm run test-only",
-    "test-only": "jest --runInBand",
-    "tdd": "jest --watch --runInBand",
-    "lint": "eslint ./src test --ext .ts,.tsx,.js",
-    "prettier": "prettier './**/*.js' './**/*.css' './**/*.md' --write",
-    "prettier-list-different": "prettier './**/*.js' './**/*.css' './**/*.md' --list-different",
-    "clean:lib": "rimraf lib",
-    "clean:node_modules": "rimraf node_modules",
-    "build:commonjs": "tsc -b tsconfig-cjs.build.json",
-    "build:esm": "tsc -b tsconfig-esm.build.json",
-    "build:umd": "webpack --mode production",
-    "build:umd:analyze": "webpack --mode production --profile --json > ./lib/umd/stats.json && webpack-bundle-analyzer ./lib/umd/stats.json",
-    "build": "yarn clean:lib && yarn build:commonjs && yarn build:esm && yarn build:umd",
-    "prerelease": "yarn run clean:lib && yarn run build"
-  },
-  "homepage": "https://www.selfcommunity.com",
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/selfcommunity/community-js/tree/main/packages/react-templates"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.3",
-    "react": "^17.0.2 || 18",
-    "react-dom": "17 || 18",
-    "react-intl": "^6.5.5"
-  },
-  "dependencies": {
-    "@selfcommunity/react-core": "^0.6.6",
-    "@selfcommunity/react-i18n": "^0.7.6",
-    "@selfcommunity/react-ui": "^0.10.4",
-    "@selfcommunity/types": "^0.7.6",
-    "@types/classnames": "^2.3.1",
-    "classnames": "^2.3.2"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.2.14",
-    "@types/enzyme": "^3.10.8",
-    "@types/jest": "^26.0.20",
-    "@types/react": "17 || 18",
-    "@types/react-dom": "17 || 18",
-    "@types/sinon": "^9.0.10",
-    "@typescript-eslint/eslint-plugin": "^4.14.2",
-    "@typescript-eslint/parser": "^4.14.2",
-    "babel-jest": "^26.6.3",
-    "chai": "^4.2.0",
-    "cherry-pick": "^0.5.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^7.19.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-mocha": "^8.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "faker": "^5.3.1",
-    "install-peers-cli": "^2.2.0",
-    "jest": "^26.6.3",
-    "lodash": "^4.17.15",
-    "postcss": "^8.2.4",
-    "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.32.6",
-    "sinon": "^9.2.4",
-    "tslib": "^2.6.2",
-    "typescript": "^4.1.3",
-    "webpack": "^5.20.1",
-    "webpack-atoms": "^17.1.0",
-    "webpack-bundle-analyzer": "^4.9.0",
-    "webpack-cli": "^4.5.0"
-  },
-  "prettier": {
-    "printWidth": 150,
-    "bracketSpacing": false,
-    "trailingComma": "none",
-    "singleQuote": true,
-    "bracketSameLine": true
-  },
-  "bugs": {
-    "url": "https://github.com/selfcommunity/community-js/issues"
-  }
+	"name": "@selfcommunity/react-templates",
+	"version": "0.4.8-alpha.35",
+	"license": "MIT",
+	"private": false,
+	"main": "./lib/cjs/index.js",
+	"module": "./lib/esm/index.js",
+	"exports": {
+		".": {
+			"require": "./lib/cjs/index.js",
+			"import": "./lib/esm/index.js"
+		},
+		"./*": {
+			"require": "./lib/cjs/*",
+			"import": "./lib/esm/*"
+		}
+	},
+	"sideEffects": false,
+	"description": "React Templates Components to integrate a Community created with SelfCommunity.",
+	"author": "SelfCommunity <https://www.selfcommunity.com>",
+	"keywords": [
+		"react",
+		"widgets",
+		"community",
+		"selfcommunity",
+		"community templates",
+		"selfcommunity templates",
+		"react-ui",
+		"react-components",
+		"react-templates"
+	],
+	"scripts": {
+		"prepare": "install-peers -f",
+		"install-peers": "install-peers -f",
+		"test": "npm run lint && npm run test-only",
+		"test-only": "jest --runInBand",
+		"tdd": "jest --watch --runInBand",
+		"lint": "eslint ./src test --ext .ts,.tsx,.js",
+		"prettier": "prettier './**/*.js' './**/*.css' './**/*.md' --write",
+		"prettier-list-different": "prettier './**/*.js' './**/*.css' './**/*.md' --list-different",
+		"clean:lib": "rimraf lib",
+		"clean:node_modules": "rimraf node_modules",
+		"build:commonjs": "tsc -b tsconfig-cjs.build.json",
+		"build:esm": "tsc -b tsconfig-esm.build.json",
+		"build:umd": "webpack --mode production",
+		"build:umd:analyze": "webpack --mode production --profile --json > ./lib/umd/stats.json && webpack-bundle-analyzer ./lib/umd/stats.json",
+		"build": "yarn clean:lib && yarn build:commonjs && yarn build:esm && yarn build:umd",
+		"prerelease": "yarn run clean:lib && yarn run build"
+	},
+	"homepage": "https://www.selfcommunity.com",
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/selfcommunity/community-js/tree/main/packages/react-templates"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"peerDependencies": {
+		"@emotion/react": "^11.11.3",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.15.3",
+		"react": "^17.0.2 || 18",
+		"react-dom": "17 || 18",
+		"react-intl": "^6.5.5"
+	},
+	"dependencies": {
+		"@selfcommunity/react-core": "^0.6.7-alpha.9",
+		"@selfcommunity/react-i18n": "^0.8.0-alpha.3",
+		"@selfcommunity/react-ui": "^0.11.0-alpha.17",
+		"@selfcommunity/types": "^0.7.7-alpha.1",
+		"@types/classnames": "^2.3.1",
+		"classnames": "^2.3.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.7.4",
+		"@babel/preset-env": "^7.25.8",
+		"@babel/preset-react": "^7.7.4",
+		"@babel/preset-typescript": "^7.7.4",
+		"@types/chai": "^4.2.14",
+		"@types/enzyme": "^3.10.8",
+		"@types/jest": "^26.0.20",
+		"@types/react": "17 || 18",
+		"@types/react-dom": "17 || 18",
+		"@types/sinon": "^9.0.10",
+		"@typescript-eslint/eslint-plugin": "^4.14.2",
+		"@typescript-eslint/parser": "^4.14.2",
+		"babel-jest": "^26.6.3",
+		"babel-loader": "^8.2.2",
+		"babel-preset-env-modules": "^1.0.0",
+		"chai": "^4.2.0",
+		"cherry-pick": "^0.5.0",
+		"enzyme": "^3.10.0",
+		"enzyme-adapter-react-16": "^1.15.6",
+		"eslint": "^7.19.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-mocha": "^8.0.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"faker": "^5.3.1",
+		"install-peers-cli": "^2.2.0",
+		"jest": "^26.6.3",
+		"lodash": "^4.17.15",
+		"postcss": "^8.2.4",
+		"prettier": "^2.2.1",
+		"rimraf": "^3.0.2",
+		"sass": "^1.32.6",
+		"sinon": "^9.2.4",
+		"tslib": "^2.6.2",
+		"typescript": "^4.1.3",
+		"webpack": "^5.20.1",
+		"webpack-bundle-analyzer": "^4.9.0",
+		"webpack-cli": "^4.5.0"
+	},
+	"prettier": {
+		"printWidth": 150,
+		"bracketSpacing": false,
+		"trailingComma": "none",
+		"singleQuote": true,
+		"bracketSameLine": true
+	},
+	"bugs": {
+		"url": "https://github.com/selfcommunity/community-js/issues"
+	}
 }

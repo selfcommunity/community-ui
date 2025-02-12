@@ -38,7 +38,7 @@ import {FormattedMessage} from 'react-intl';
 import {SCOPE_SC_UI} from '../../constants/Errors';
 import {DEFAULT_PAGINATION_OFFSET} from '../../constants/Pagination';
 import {SCGroupEventType, SCTopicType} from '../../constants/PubSub';
-import CreateEventButton from '../CreateEventButton';
+import CreateEventButton, {CreateEventButtonProps} from '../CreateEventButton';
 import Event, {EventProps, EventSkeleton, EventSkeletonProps} from '../Event';
 import Skeleton, {EventsSkeletonProps} from '../Events/Skeleton';
 import {PREFIX} from './constants';
@@ -125,6 +125,12 @@ export interface EventsProps {
   GridItemComponentProps?: Pick<GridProps, Exclude<keyof GridProps, 'container' | 'component' | 'children' | 'item' | 'classes'>>;
 
   /**
+   * Props to spread to CreateEvent component
+   * @default empty object
+   */
+  CreateEventButtonProps?: CreateEventButtonProps;
+
+  /**
    * Show/Hide filters
    * @default true
    */
@@ -190,6 +196,7 @@ export default function Events(inProps: EventsProps): JSX.Element {
     EventSkeletonComponentProps = {elevation: 0, square: true},
     GridContainerComponentProps = {},
     GridItemComponentProps = {},
+    CreateEventButtonProps = {},
     showFilters = false,
     filters,
     general = true,
@@ -508,7 +515,11 @@ export default function Events(inProps: EventsProps): JSX.Element {
                     <EventSkeleton
                       {...EventSkeletonComponentProps}
                       skeletonsAnimation={false}
-                      actions={(onlyStaffEnabled && UserUtils.isStaff(scUserContext.user)) || !onlyStaffEnabled ? <CreateEventButton /> : null}
+                      actions={
+                        (onlyStaffEnabled && UserUtils.isStaff(scUserContext.user)) || !onlyStaffEnabled ? (
+                          <CreateEventButton {...CreateEventButtonProps} />
+                        ) : null
+                      }
                     />
                     <Typography variant="body1">
                       <FormattedMessage id="ui.events.noEvents.title" defaultMessage="ui.events.noEvents.title" />
@@ -519,7 +530,11 @@ export default function Events(inProps: EventsProps): JSX.Element {
                     <EventSkeleton
                       {...EventSkeletonComponentProps}
                       skeletonsAnimation={false}
-                      actions={(onlyStaffEnabled && UserUtils.isStaff(scUserContext.user)) || !onlyStaffEnabled ? <CreateEventButton /> : null}
+                      actions={
+                        (onlyStaffEnabled && UserUtils.isStaff(scUserContext.user)) || !onlyStaffEnabled ? (
+                          <CreateEventButton {...CreateEventButtonProps} />
+                        ) : null
+                      }
                     />
                     <Typography variant="body1">
                       <FormattedMessage id="ui.events.noEvents.title.personal" defaultMessage="ui.events.noEvents.title.personal" />
@@ -542,7 +557,7 @@ export default function Events(inProps: EventsProps): JSX.Element {
                           {...EventSkeletonComponentProps}
                           skeletonsAnimation={false}
                           actions={
-                            <CreateEventButton variant="outlined" color="primary" size="small">
+                            <CreateEventButton variant="outlined" color="primary" size="small" {...CreateEventButtonProps}>
                               <FormattedMessage id="ui.events.skeleton.action.add" defaultMessage="ui.events.skeleton.action.add" />
                             </CreateEventButton>
                           }

@@ -3,6 +3,143 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0-alpha.3](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.8.0-alpha.2...@selfcommunity/react-i18n@0.8.0-alpha.3) (2025-02-11)
+
+
+### Bug Fixes
+
+* live stream ([48bac91](https://github.com/selfcommunity/community-js/commit/48bac911f55dd95158b2ae438f18a8c9746161ac))
+
+
+
+
+
+# [0.8.0-alpha.2](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.8.0-alpha.1...@selfcommunity/react-i18n@0.8.0-alpha.2) (2025-01-21)
+
+
+### Bug Fixes
+
+* updated some locale string ([ae36e33](https://github.com/selfcommunity/community-js/commit/ae36e3364c3525e272e6883b758f9492feb48926))
+
+
+
+
+
+# [0.8.0-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.8.0-alpha.0...@selfcommunity/react-i18n@0.8.0-alpha.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* liveStream dialog copy ([3b8accc](https://github.com/selfcommunity/community-js/commit/3b8accc926af1021da37699ab8b4837bcb7775a1))
+
+
+
+
+
+# [0.8.0-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.5...@selfcommunity/react-i18n@0.8.0-alpha.0) (2025-01-13)
+
+
+### Features
+
+* modified ComposerIconButton to accept Menu ([96189ba](https://github.com/selfcommunity/community-js/commit/96189ba88f517868e1895e9aa2f18a81e35935ba))
+
+
+
+
+
+## [0.7.7-alpha.5](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.4...@selfcommunity/react-i18n@0.7.7-alpha.5) (2025-01-10)
+
+
+### Bug Fixes
+
+* liveStream errors ([b399573](https://github.com/selfcommunity/community-js/commit/b3995738bda178ce82eace90f78b5d2b1f45b6c0))
+
+
+
+
+
+## [0.7.7-alpha.4](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.3...@selfcommunity/react-i18n@0.7.7-alpha.4) (2025-01-09)
+
+
+### Bug Fixes
+
+* i18n ([b862198](https://github.com/selfcommunity/community-js/commit/b862198d9a9b14177ba2bff39c47b74a98e0a437))
+
+
+
+
+
+## [0.7.7-alpha.3](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.2...@selfcommunity/react-i18n@0.7.7-alpha.3) (2025-01-09)
+
+
+### Bug Fixes
+
+* chip post group, event live stream ([bbdf085](https://github.com/selfcommunity/community-js/commit/bbdf08546e4811bdd27ad3398a2a8fca1d1cde94))
+* chip post group, event live stream ([18777f9](https://github.com/selfcommunity/community-js/commit/18777f926561ea35b086d42b33ff30be6389d560))
+
+
+
+
+
+## [0.7.7-alpha.2](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.1...@selfcommunity/react-i18n@0.7.7-alpha.2) (2025-01-08)
+
+
+### Bug Fixes
+
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* i18n ([284d5aa](https://github.com/selfcommunity/community-js/commit/284d5aac16ba7e52301a2cbf746a2389fedfbc47))
+* initial livestream ([d81f1b7](https://github.com/selfcommunity/community-js/commit/d81f1b7640e34f1fd85ab2720b364f612cb4a505))
+* livestream ([89c9e54](https://github.com/selfcommunity/community-js/commit/89c9e546bdab64e18d2897f2d785e924faec64c9))
+* livestream ([6bad845](https://github.com/selfcommunity/community-js/commit/6bad845bb3e4e8d7a774600bb7ac97ca0da372e1))
+* livestream ([a5cf702](https://github.com/selfcommunity/community-js/commit/a5cf702e447842e9a9abdf461b066dbe309c6801))
+* livestream ([076ec99](https://github.com/selfcommunity/community-js/commit/076ec99204333cc7a42359e288773a46010dc99e))
+* livestream ([eafaa82](https://github.com/selfcommunity/community-js/commit/eafaa824d1092cfd97a73b68382c36cf8d667b1e))
+* livestream ([18ef561](https://github.com/selfcommunity/community-js/commit/18ef561c17ef54f424602baf8e2b82e6ba8fa417))
+* livestream ([cbdcb56](https://github.com/selfcommunity/community-js/commit/cbdcb5626d10135c61798630912a51b2559075b7))
+* livestream ([b377001](https://github.com/selfcommunity/community-js/commit/b37700156ff3d2effee800d85fd97ee72bde8ef1))
+* livestream ([50f493b](https://github.com/selfcommunity/community-js/commit/50f493b7b374215a995f1cd2879600fa4103e8ed))
+* livestream ([9139df7](https://github.com/selfcommunity/community-js/commit/9139df75d054dfcb1a6664f39fb146a16e69e77f))
+* livestream ([b3df735](https://github.com/selfcommunity/community-js/commit/b3df7359d334426f09c6619630f1ade4a8ca462a))
+* livestream ([71d006b](https://github.com/selfcommunity/community-js/commit/71d006b642183eeda860f21772789a3cdf0bd3d7))
+* livestream ([37d2561](https://github.com/selfcommunity/community-js/commit/37d2561218ed54bcbfc7e8725dd39ef7196e78d8))
+* livestream ([1377ebf](https://github.com/selfcommunity/community-js/commit/1377ebf0d7cf56fae914c2af5ae96d8161350d51))
+* livestream ([619ae76](https://github.com/selfcommunity/community-js/commit/619ae76fd237be7bad9bbec0afdc3052bf662d31))
+* livestream ([594e1c3](https://github.com/selfcommunity/community-js/commit/594e1c3659025a7d587edc55108ba527ca1f753d))
+* livestream ([a5b9329](https://github.com/selfcommunity/community-js/commit/a5b9329f7b8b578f583653c6aa8e4478d422d9fa))
+* livestream ([9e7d4f2](https://github.com/selfcommunity/community-js/commit/9e7d4f293b64190ed520194ab1ff4d381d9a443e))
+* livestream ([621d293](https://github.com/selfcommunity/community-js/commit/621d29305b2c13b28bf1dc777794168f5b55341e))
+* livestream ([8da590e](https://github.com/selfcommunity/community-js/commit/8da590ef46d1063cc016fc6ba53eac91e0946f67))
+* livestream ([d6c209b](https://github.com/selfcommunity/community-js/commit/d6c209b1ff2f23f4bb3176b6c4d33703c6fedd77))
+* livestream assets, resolution ([b7c31d2](https://github.com/selfcommunity/community-js/commit/b7c31d2bf6941f7f7f84a64dc9893b8a779080c7))
+* livestream ban user ([d7d971b](https://github.com/selfcommunity/community-js/commit/d7d971b3f9df43638c8822158a3fa609b3ee4204))
+* livestream copy link ([42a8b35](https://github.com/selfcommunity/community-js/commit/42a8b35a9b4d67d683f7f31a7b73f171f7b2ac74))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+* livestream slug ([10c97ee](https://github.com/selfcommunity/community-js/commit/10c97eed1af6388c97e7b97fb5760e3e9d42f7d2))
+* update react-ui deps -> react-lazyload ([d492ec9](https://github.com/selfcommunity/community-js/commit/d492ec98f5ba4dd5b7272578012d96f25d6f62fd))
+
+
+
+
+
+## [0.7.7-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.7-alpha.0...@selfcommunity/react-i18n@0.7.7-alpha.1) (2024-12-19)
+
+
+### Performance Improvements
+
+* added it translation for cancel action in event form datetime pickers ([d7507bc](https://github.com/selfcommunity/community-js/commit/d7507bcd69f89296a67ce4f9d62859d93ea9e85b))
+
+
+
+
+
+## [0.7.7-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.6...@selfcommunity/react-i18n@0.7.7-alpha.0) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/react-i18n
+
+
+
+
+
 ## [0.7.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/react-i18n@0.7.6-alpha.2...@selfcommunity/react-i18n@0.7.6) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/react-i18n

@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.7-alpha.1](https://github.com/selfcommunity/community-js/compare/@selfcommunity/api-services@0.6.7-alpha.0...@selfcommunity/api-services@0.6.7-alpha.1) (2025-01-08)
+
+
+### Bug Fixes
+
+* dependencies ([bfb228f](https://github.com/selfcommunity/community-js/commit/bfb228fe482d247b87605a57e7de34faf7087214))
+* livestream ([6bad845](https://github.com/selfcommunity/community-js/commit/6bad845bb3e4e8d7a774600bb7ac97ca0da372e1))
+* livestream ([71d006b](https://github.com/selfcommunity/community-js/commit/71d006b642183eeda860f21772789a3cdf0bd3d7))
+* livestream ([37d2561](https://github.com/selfcommunity/community-js/commit/37d2561218ed54bcbfc7e8725dd39ef7196e78d8))
+* livestream ([619ae76](https://github.com/selfcommunity/community-js/commit/619ae76fd237be7bad9bbec0afdc3052bf662d31))
+* livestream ([7b9c841](https://github.com/selfcommunity/community-js/commit/7b9c841bc0815f6a99e9d1c06cf77237601dc527))
+* livestream ([9e7d4f2](https://github.com/selfcommunity/community-js/commit/9e7d4f293b64190ed520194ab1ff4d381d9a443e))
+* livestream ([9e5f413](https://github.com/selfcommunity/community-js/commit/9e5f413f97ef3a471b3368b0dc79f450d0d0d163))
+* livestream ([d6c209b](https://github.com/selfcommunity/community-js/commit/d6c209b1ff2f23f4bb3176b6c4d33703c6fedd77))
+* livestream in progress - fix deps - remove webpack-atoms (use fiber) and conflict with livekit deps ([68ed5ba](https://github.com/selfcommunity/community-js/commit/68ed5ba4394740787bfd89b1e7d195f9ad2954d4))
+* update react-ui deps -> react-lazyload ([d492ec9](https://github.com/selfcommunity/community-js/commit/d492ec98f5ba4dd5b7272578012d96f25d6f62fd))
+
+
+
+
+
+## [0.6.7-alpha.0](https://github.com/selfcommunity/community-js/compare/@selfcommunity/api-services@0.6.6...@selfcommunity/api-services@0.6.7-alpha.0) (2024-12-19)
+
+**Note:** Version bump only for package @selfcommunity/api-services
+
+
+
+
+
 ## [0.6.6](https://github.com/selfcommunity/community-js/compare/@selfcommunity/api-services@0.6.6-alpha.1...@selfcommunity/api-services@0.6.6) (2024-12-17)
 
 **Note:** Version bump only for package @selfcommunity/api-services

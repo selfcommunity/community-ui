@@ -30,7 +30,10 @@ const MATCHERS = [
         index: match.index,
         length: match[0].length,
         text: match[0],
-        url: normalizeURL(match[0])
+        url: normalizeURL(match[0]),
+        attributes: {
+          target: '_blank'
+        }
       }
     );
   },
@@ -41,7 +44,10 @@ const MATCHERS = [
         index: match.index,
         length: match[0].length,
         text: match[0],
-        url: `mailto:${match[0]}`
+        url: `mailto:${match[0]}`,
+        attributes: {
+          target: '_blank'
+        }
       }
     );
   }

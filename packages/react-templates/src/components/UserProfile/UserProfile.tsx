@@ -16,9 +16,11 @@ import {
   UserFollowedCategoriesWidget,
   UserFollowedUsersWidget,
   UserFollowersWidget,
+  UserLiveStreamWidget,
   UserProfileBlocked,
   UserProfileHeader,
-  UserProfileHeaderProps, UserSubscribedGroupsWidget,
+  UserProfileHeaderProps,
+  UserSubscribedGroupsWidget
 } from '@selfcommunity/react-ui';
 import UserFeed, {UserFeedProps} from '../UserFeed';
 import {
@@ -150,31 +152,38 @@ export interface UserProfileProps {
 const WIDGETS_FOLLOWERS = [
   {
     type: 'widget',
-    component: UserFollowedCategoriesWidget,
+    component: UserLiveStreamWidget,
     componentProps: {},
     column: 'right',
     position: 0
   },
   {
     type: 'widget',
-    component: UserFollowedUsersWidget,
+    component: UserFollowedCategoriesWidget,
     componentProps: {},
     column: 'right',
     position: 1
   },
   {
     type: 'widget',
-    component: UserFollowersWidget,
+    component: UserFollowedUsersWidget,
     componentProps: {},
     column: 'right',
     position: 2
   },
   {
     type: 'widget',
-    component: UserSubscribedGroupsWidget,
+    component: UserFollowersWidget,
     componentProps: {},
     column: 'right',
     position: 3
+  },
+  {
+    type: 'widget',
+    component: UserSubscribedGroupsWidget,
+    componentProps: {},
+    column: 'right',
+    position: 4
   }
 ];
 
@@ -191,24 +200,31 @@ const WIDGETS_FOLLOWERS_MY_PROFILE = [
 const WIDGETS_CONNECTIONS = [
   {
     type: 'widget',
-    component: UserFollowedCategoriesWidget,
+    component: UserLiveStreamWidget,
     componentProps: {},
     column: 'right',
     position: 0
   },
   {
     type: 'widget',
-    component: UserConnectionsWidget,
+    component: UserFollowedCategoriesWidget,
     componentProps: {},
     column: 'right',
     position: 1
   },
   {
     type: 'widget',
-    component: UserSubscribedGroupsWidget,
+    component: UserConnectionsWidget,
     componentProps: {},
     column: 'right',
     position: 2
+  },
+  {
+    type: 'widget',
+    component: UserSubscribedGroupsWidget,
+    componentProps: {},
+    column: 'right',
+    position: 3
   }
 ];
 

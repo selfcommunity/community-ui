@@ -148,7 +148,7 @@ export interface SCUserType {
   /**
    * List of user permission. Only for the resource /user/me/.
    */
-  permission?: Array<string>;
+  permission?: Record<string, any>;
 
   /**
    * The connection status between the request user and this user.

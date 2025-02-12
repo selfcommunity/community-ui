@@ -243,9 +243,7 @@ export default function UserActionIconButton(inProps: UserActionIconButtonProps)
                 ? [
                     <Divider key="divider_moderate" />,
                     <ListItem key="moderate">
-                      <ListItemButton
-                        component={Link}
-                        onClick={() => fetchPlatform(`/moderation/user/?username=${scUser.username}`)}>
+                      <ListItemButton component={Link} onClick={() => fetchPlatform(`/moderation/user/?username=${scUser.username}`)}>
                         <ListItemText
                           primary={<FormattedMessage defaultMessage="ui.userActionIconButton.moderate" id="ui.userActionIconButton.moderate" />}
                         />
@@ -279,10 +277,7 @@ export default function UserActionIconButton(inProps: UserActionIconButtonProps)
               ...(canModerate
                 ? [
                     <Divider key="divider_moderate" />,
-                    <MenuItem
-                      key="moderate"
-                      component={Link}
-                      onClick={() => fetchPlatform(`/moderation/user/?username=${scUser.username}`)}>
+                    <MenuItem key="moderate" component={Link} onClick={() => fetchPlatform(`/moderation/user/?username=${scUser.username}`)}>
                       <FormattedMessage defaultMessage="ui.userActionIconButton.moderate" id="ui.userActionIconButton.moderate" />
                     </MenuItem>
                   ]
@@ -297,20 +292,18 @@ export default function UserActionIconButton(inProps: UserActionIconButtonProps)
       <Root className={classNames(classes.root, className)} {...rest} onClick={handleOpen}>
         <Icon>more_vert</Icon>
       </Root>
-      {isMobile ? (
-        <SwipeableDrawerRoot
-          className={classes.drawerRoot}
-          anchor="bottom"
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          disableSwipeToOpen>
-          <List>{renderList()}</List>
-        </SwipeableDrawerRoot>
-      ) : (
-        <MenuRoot className={classes.menuRoot} anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
-          {renderList()}
-        </MenuRoot>
+      {Boolean(anchorEl) && (
+        <>
+          {isMobile ? (
+            <SwipeableDrawerRoot className={classes.drawerRoot} anchor="bottom" open onClose={handleClose} onOpen={handleOpen} disableSwipeToOpen>
+              <List>{renderList()}</List>
+            </SwipeableDrawerRoot>
+          ) : (
+            <MenuRoot className={classes.menuRoot} anchorEl={anchorEl} open onClose={handleClose}>
+              {renderList()}
+            </MenuRoot>
+          )}
+        </>
       )}
       <UserInfoDialog userId={userId} user={scUser} open={infoOpen} onClose={handleInfoClose} />
       {openHideDialog && (
